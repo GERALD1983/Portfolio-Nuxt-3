@@ -1,12 +1,12 @@
 <template>
-  <div id="nav" class="nav-size flex-between">
+  <div id="nav" class="nav-size flex-around">
     <div @click="toTop" class="ombre-nav">
       <Logo />
     </div>
 
-    <div class="nav-projet flex-around">
+    <div class="nav-projet flex-center">
       <div @click="toPropos" class="ombre-nav bordure-logo flex-center">
-        <h5 class="color-grey-letter">à Propos</h5>
+        <h5 class="color-grey-letter">A Propos</h5>
       </div>
       <div @click="toSkills" class="ombre-nav bordure-logo flex-center">
         <h5 class="color-grey-letter">Compétences</h5>
@@ -17,6 +17,11 @@
       <div @click="toFoot" class="ombre-nav bordure-logo flex-center">
         <h5 class="color-grey-letter">Contact</h5>
       </div>
+    </div>
+    <div class="ombre-nav flex-center">
+      <h5 class="color-grey-letter">git</h5>
+      <h5 class="color-grey-letter">twit</h5>
+      <h5 class="color-grey-letter">link</h5>
     </div>
   </div>
 </template>
@@ -77,9 +82,9 @@ const toProject = () => {
 </script>
 
 <style>
-.navNoOpac {
+/* .navNoOpac {
   opacity: 1 !important;
-}
+} */
 .nav-fixed {
   position: fixed;
   z-index: 9;
@@ -88,10 +93,13 @@ const toProject = () => {
 }
 .nav-size {
   height: 80px;
-  background-color: white;
+  /* background-color: white; */
   color: grey;
   width: 100%;
-  border-bottom: 0.1px solid grey;
+  /* border-bottom: 0.1px solid grey; */
+}
+.ombre-nav {
+  cursor: pointer;
 }
 .ombre-nav:hover {
   /* box-shadow: 0 0 0 0 #748928ff; */
@@ -104,18 +112,23 @@ const toProject = () => {
   width: 80%;
 }
 .bordure-logo {
+  margin-left: 30px;
+  margin-right: 30px;
   border-radius: 0.5em;
-  background-color: white;
+  /* background-color: white; */
   color: grey;
-  width: 100px;
-  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 35px;
 
   /*border: 1mm ridge#ffdea4;*/
 }
 .bordure-logo:hover {
   background-color: #f4f4f5;
-  width: 100px;
-  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 35px;
+  cursor: pointer;
   /* border: 0.1px solid #ffdea4; */
   /*border: 1mm ridge#ffdea4;*/
 }

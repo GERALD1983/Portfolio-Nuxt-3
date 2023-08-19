@@ -1,19 +1,19 @@
 <template>
-  <div class="flexName">
+  <div class="flex-name">
     <div class="container">
-      <div class="cube fontCubeLogo">
-        <div class="face front flexName">JS</div>
-        <div class="face back flexName">CSS</div>
-        <div class="face right flexName">HTML</div>
-        <div class="face left flexName">NODE</div>
-        <div class="face top flexName">VUE</div>
-        <div class="face bottom flexName">NUXT</div>
+      <div class="cube font-cube-logo">
+        <div class="face front flex-name">JS</div>
+        <div class="face back flex-name">CSS</div>
+        <div class="face right flex-name">HTML</div>
+        <div class="face left flex-name">NODE</div>
+        <div class="face top flex-name">VUE</div>
+        <div class="face bottom flex-name">NUXT</div>
       </div>
     </div>
     <div class="name-society">
       <h2>GF</h2>
 
-      <h4>Tech</h4>
+      <h2>Tech</h2>
     </div>
   </div>
 </template>
@@ -31,16 +31,17 @@
 .name-society {
   margin-left: 40px;
   color: black;
+  font-weight: bolder;
 }
-.flexName {
+.flex-name {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: bolder;
 }
-.fontCubeLogo {
-  font-size: 12px;
+.font-cube-logo {
+  font-size: 10px;
 }
 
 .container {
@@ -123,7 +124,7 @@
     background-color: hsl(144, 75%, 35%);
   }
   30% {
-    background-color: hsl(180, 75%, 35%);
+    background-color: #00dc82;
   }
   40% {
     background-color: hsl(108, 65%, 35%);
@@ -132,7 +133,7 @@
     background-color: hsl(144, 75%, 35%);
   }
   60% {
-    background-color: hsl(180, 75%, 35%);
+    background-color: #00dc82;
   }
   70% {
     background-color: hsl(176, 60%, 45%);

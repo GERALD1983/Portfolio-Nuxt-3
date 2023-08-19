@@ -1,6 +1,11 @@
 <template>
   <div>
-    <div id="back-page" class="back-slide backSlideSize mobileBackSlideSize">
+    <div id="back-page" class="back-slide">
+      <img
+        class="back-img"
+        src="../assets/gradient-banniere-desktop.svg"
+        alt="photo profil développeur web"
+      />
       <div>
         <h1 class="titre-principale">
           Développeur Vue.js Nuxt.js en Frontend
@@ -12,6 +17,7 @@
           <br />
           Avec des Frameworks puissants et Modernes
         </h2>
+        <button class="bouton-savoir">En savoir plus</button>
       </div>
       <section class="parent-dial-img-profil">
         <div id="dial-photo" class="afficher-dialogue">
@@ -34,7 +40,7 @@
           @mouseleave="afficherMasquer()"
           width="200px"
           height="200px"
-          class="mobileEffacePhotoMoiG img-profil ombre"
+          class="img-profil ombre"
           src="../assets/profil-gerald.png"
           alt="photo profil développeur web"
         />
@@ -112,6 +118,16 @@ export default {
 }
 .titre-second {
   font-size: 20px;
+  padding-bottom: 20px;
+}
+.bouton-savoir {
+  height: 45px;
+  width: 120px;
+  background-color: black;
+  border: solid 3px rgb(8, 216, 119);
+  border-radius: 13px;
+  color: white;
+  margin-bottom: 50px;
 }
 .parent-dial-img-profil {
   display: flex;
@@ -166,13 +182,19 @@ export default {
   border-right: 3px solid white;
   width: 16ch;
 }
+.back-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
 
-.back-slide {
+/* .back-slide {
   background-repeat: no-repeat;
   background-position: right;
   background-image: url("../assets/gradient-banniere-desktop.svg");
   animation: opacBack1 1s ease-in-out;
-}
+} */
 
 .ombre:hover {
   box-shadow: 0 0 0 0 rgb(23, 255, 236);
@@ -197,7 +219,7 @@ export default {
     width: 0ch;
   }
   100% {
-    width: 25ch;
+    width: 21ch;
   }
 }
 @keyframes typing2 {
@@ -205,7 +227,7 @@ export default {
     width: 0ch;
   }
   100% {
-    width: 32ch;
+    width: 27ch;
   }
 }
 @keyframes typing3 {
