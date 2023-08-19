@@ -1,24 +1,21 @@
 <template>
-  <div
-    id="nav"
-    class="navSize mobileNavSize d-flex justify-content-between align-items-center"
-  >
-    <div @click="toTop" class="ombreNav">
+  <div id="nav" class="nav-size flex-between">
+    <div @click="toTop" class="ombre-nav">
       <Logo />
     </div>
 
-    <div class="mobileNavProjet col-lg-5 px-0 d-flex justify-content-around">
-      <div
-        @click="toProject"
-        class="mobileNavLink30 mobileNavLink70 px-0 ombreNav col-md-4 col-lg-5 bgPrimary bordureLogo d-flex align-items-center justify-content-center"
-      >
-        <h4 class="lienSouris my-1">Projets</h4>
+    <div class="nav-projet flex-around">
+      <div @click="toPropos" class="ombre-nav bordure-logo flex-center">
+        <h5 class="color-grey-letter">à Propos</h5>
       </div>
-      <div
-        @click="toFoot"
-        class="mobileNavLink30 mobileNavLink70 px-0 ombreNav col-md-4 col-lg-5 bgPrimary bordureLogo d-flex align-items-center justify-content-center"
-      >
-        <h4 class="lienSouris my-1">Contact</h4>
+      <div @click="toSkills" class="ombre-nav bordure-logo flex-center">
+        <h5 class="color-grey-letter">Compétences</h5>
+      </div>
+      <div @click="toProject" class="ombre-nav bordure-logo flex-center">
+        <h5 class="color-grey-letter">Projets</h5>
+      </div>
+      <div @click="toFoot" class="ombre-nav bordure-logo flex-center">
+        <h5 class="color-grey-letter">Contact</h5>
       </div>
     </div>
   </div>
@@ -29,15 +26,15 @@ import jump from "jump.js";
 onMounted(() => {
   var navbar = document.getElementById("nav") as HTMLElement;
   var header = document.getElementById("backMaPage") as HTMLElement;
-  var visible = header.offsetHeight;
+  var visible = navbar.offsetHeight;
   console.log(visible);
   window.addEventListener("scroll", () => {
     let scrollValue = window.scrollY;
     console.log(scrollValue);
     if (scrollValue > visible) {
-      navbar.classList.add("navFixed");
+      navbar.classList.add("nav-fixed");
     } else {
-      navbar.classList.remove("navFixed");
+      navbar.classList.remove("nav-fixed");
     }
   });
 });
@@ -49,6 +46,20 @@ function toTop() {
     callback: () => console.log("Saut terminé!"),
   });
 }
+const toPropos = () => {
+  // window.scrollTo(0, 400);
+  jump("#a-propos", {
+    duration: 1000,
+    callback: () => console.log("Saut terminé!"),
+  });
+};
+const toSkills = () => {
+  // window.scrollTo(0, 400);
+  jump("#mes-skills", {
+    duration: 1000,
+    callback: () => console.log("Saut terminé!"),
+  });
+};
 function toFoot() {
   // window.scrollTo(0, 400);
   jump(".ancreForm", {
@@ -69,31 +80,43 @@ const toProject = () => {
 .navNoOpac {
   opacity: 1 !important;
 }
-.navFixed {
+.nav-fixed {
   position: fixed;
   z-index: 9;
   top: 0;
   opacity: 0.5;
 }
-.navSize {
-  height: 90px;
-
-  background: #9e9d9d;
+.nav-size {
+  height: 80px;
+  background-color: white;
+  color: grey;
   width: 100%;
+  border-bottom: 0.1px solid grey;
 }
-.ombreNav:hover {
+.ombre-nav:hover {
   /* box-shadow: 0 0 0 0 #748928ff; */
   box-shadow: 0 0 0 0 rgb(23, 255, 236);
   animation: pulse 1.3s infinite;
   /* background: #9e9d9d !important;
     color: white !important;*/
 }
-.bordureLogo {
+.nav-projet {
+  width: 80%;
+}
+.bordure-logo {
   border-radius: 0.5em;
+  background-color: white;
+  color: grey;
+  width: 100px;
+  height: 40px;
 
-  background: gray;
-  color: white;
-  border: 0.1px solid #ffdea4;
+  /*border: 1mm ridge#ffdea4;*/
+}
+.bordure-logo:hover {
+  background-color: #f4f4f5;
+  width: 100px;
+  height: 40px;
+  /* border: 0.1px solid #ffdea4; */
   /*border: 1mm ridge#ffdea4;*/
 }
 </style>

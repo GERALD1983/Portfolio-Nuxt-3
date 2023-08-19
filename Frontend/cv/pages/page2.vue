@@ -2,7 +2,6 @@
   <div>
     je suis la page 2
     <NuxtWelcome />
-    <AppAlert />
   </div>
 </template>
 <script setup lang="ts">
