@@ -7,17 +7,25 @@
         alt="photo profil développeur web"
       />
       <div>
+        <button id="bouton-version">🔥 Dev version typescript</button>
         <h1 class="titre-principale">
           Développeur Vue.js Nuxt.js en Frontend
           <br />Développeur Node.js Express en Backend
         </h1>
         <h2 class="titre-second">
           Contruisons ensemble votre application de demain
-          <br />Développons en collobaorations votre startup innovantes
+          <br />Développons en colloboration votre startup innovantes
           <br />
           Avec des Frameworks puissants et Modernes
         </h2>
-        <button class="bouton-savoir">En savoir plus</button>
+        <div>
+          <button class="bouton-savoir">En savoir plus</button>
+          <button id="bouton-version-bottom">
+            <span class="fleche-bouton">► </span
+            ><span class="call-passe">: hover </span
+            ><span class="texte-call-passe"> move to the picture</span>
+          </button>
+        </div>
       </div>
       <section class="parent-dial-img-profil">
         <div id="dial-photo" class="afficher-dialogue">
@@ -52,21 +60,7 @@
 <script>
 export default {
   name: "maPage",
-  data() {
-    return {
-      messages: [
-        "Développeur Web",
-        "Spécialisé en JavaScript",
-        "Développeur Frontend Vue.js",
-        "Développeur Backend Node.js",
-        "Intégrateur Prestashop",
-        "Webmaster optimisation Seo",
-        "Développeur Fullstack Js",
-      ],
-      currentNumber: 0,
-      timer: null,
-    };
-  },
+
   created() {},
 
   methods: {
@@ -120,6 +114,20 @@ export default {
   font-size: 20px;
   padding-bottom: 20px;
 }
+#bouton-version {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 27px;
+  border-radius: 7px;
+  background: #ededed;
+  color: rgb(111, 111, 111);
+  cursor: pointer;
+}
+#bouton-version:hover {
+  background: #dbdbdb;
+  color: rgb(83, 82, 82);
+}
+
 .bouton-savoir {
   height: 45px;
   width: 120px;
@@ -129,6 +137,31 @@ export default {
   color: white;
   margin-bottom: 50px;
 }
+#bouton-version-bottom {
+  margin-left: 20px;
+  padding-right: 20px;
+  height: 35px;
+  width: 220px;
+  border-radius: 7px;
+  background: #ededed;
+  color: rgb(111, 111, 111);
+  cursor: pointer;
+}
+#bouton-version-bottom:hover {
+  background: #dbdbdb;
+  color: rgb(83, 82, 82);
+}
+.fleche-bouton {
+  color: rgb(8, 216, 119);
+}
+
+.call-passe {
+  color: #b469c1;
+}
+.texte-call-passe {
+  color: #51a9dd;
+}
+
 .parent-dial-img-profil {
   display: flex;
   flex-direction: column;
@@ -197,6 +230,7 @@ export default {
 } */
 
 .ombre:hover {
+  cursor: pointer;
   box-shadow: 0 0 0 0 rgb(23, 255, 236);
   animation: pulse 1.3s infinite;
 }
@@ -227,7 +261,7 @@ export default {
     width: 0ch;
   }
   100% {
-    width: 27ch;
+    width: 26ch;
   }
 }
 @keyframes typing3 {
