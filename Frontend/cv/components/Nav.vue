@@ -30,13 +30,13 @@
 <script setup lang="ts">
 import jump from "jump.js";
 onMounted(() => {
-  var navbar = document.getElementById("nav") as HTMLElement;
-  var navInvisible = document.getElementById("nav-invisible") as HTMLElement;
-  var header = document.getElementById("backMaPage") as HTMLElement;
-  var visible = navbar.offsetHeight;
+  const navbar = document.getElementById("nav") as HTMLElement;
+  const navInvisible = document.getElementById("nav-invisible") as HTMLElement;
+  const visible: number = navbar.offsetHeight;
   console.log(visible);
+  //
   window.addEventListener("scroll", () => {
-    let scrollValue = window.scrollY;
+    let scrollValue: number = window.scrollY;
     console.log(scrollValue);
     if (scrollValue > visible) {
       navbar.classList.add("nav-fixed");
@@ -91,9 +91,6 @@ const toProject = () => {
 </script>
 
 <style>
-/* .navNoOpac {
-  opacity: 1 !important;
-} */
 .nav-fixed {
   position: fixed;
   z-index: 9;
