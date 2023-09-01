@@ -7,10 +7,10 @@
         alt="photo profil développeur web"
       />
       <div>
-        <button id="bouton-version">🔥 Dev version typescript</button>
+        <button id="bouton-version">🔥 Dev Version Typescript</button>
         <h1 class="titre-principale">
-          Développeur Vue.js Nuxt.js en Frontend
-          <br />Développeur Node.js Express en Backend
+          Développeur Vue Nuxt <br />
+          Node.js
         </h1>
         <h2 class="titre-second">
           Contruisons ensemble votre application de demain
@@ -104,9 +104,9 @@ const afficherMasquer = () => {
   display: flex;
 }
 .titre-principale {
-  width: 600px;
-  font-weight: 900;
-  font-size: 40px;
+  width: 800px;
+  font-weight: 650;
+  font-size: 4em;
 }
 .titre-second {
   font-size: 20px;
