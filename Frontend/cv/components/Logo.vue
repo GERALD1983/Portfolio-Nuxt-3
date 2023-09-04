@@ -7,14 +7,13 @@
         <div class="face right flexName">HTML</div>
         <div class="face left flexName">NODE</div>
         <div class="face top flexName">VUE</div>
-        <div class="face bottom flexName">CODE</div>
+        <div class="face bottom flexName">NUXT</div>
       </div>
     </div>
-    <div class="ml-4">
-      <div>
-        <h4>GF</h4>
-      </div>
-      <div>Tech</div>
+    <div class="name-society">
+      <h2>GF</h2>
+
+      <h4>Tech</h4>
     </div>
   </div>
 </template>
@@ -29,11 +28,16 @@
   margin: 0;
   padding: 0;
 }
+.name-society {
+  margin-left: 40px;
+  color: black;
+}
 .flexName {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  font-weight: bolder;
 }
 .fontCubeLogo {
   font-size: 12px;
@@ -58,38 +62,45 @@
   position: absolute;
   width: 35px;
   height: 35px;
+  border: 1px solid grey;
 }
 
 .top {
-  background: #886526;
+  background: #00dc82;
   transform: rotateX(90deg) translateZ(25px);
+  animation: wheelHueColor 5s infinite linear;
 }
 .bottom {
-  background: #886526;
+  background: #00dc82;
 
   transform: rotateX(-90deg) translateZ(25px);
+  animation: wheelHueColor 5s infinite linear;
 }
 
 .right {
-  background: #886526;
+  background: #00dc82;
 
   transform: rotateY(90deg) translateZ(25px);
+  animation: wheelHueColor 5s infinite linear;
 }
 .left {
-  background: #886526;
+  background: #00dc82;
 
   transform: rotateY(-90deg) translateZ(25px);
+  animation: wheelHueColor 5s infinite linear;
 }
 
 .front {
-  background: #886526;
+  background: #00dc82;
 
   transform: rotateX(0deg) translateZ(25px);
+  animation: wheelHueColor 5s infinite linear;
 }
 .back {
-  background: #886526;
+  background: #00dc82;
 
   transform: rotateX(-180deg) translateZ(25px);
+  animation: wheelHueColor 5s infinite linear;
 }
 
 @keyframes spin {
@@ -98,6 +109,39 @@
   }
   to {
     transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes wheelHueColor {
+  from,
+  to {
+    background-color: #00dc82;
+  }
+  10% {
+    background-color: hsl(108, 65%, 35%);
+  }
+  20% {
+    background-color: hsl(144, 75%, 35%);
+  }
+  30% {
+    background-color: hsl(180, 75%, 35%);
+  }
+  40% {
+    background-color: hsl(108, 65%, 35%);
+  }
+  50% {
+    background-color: hsl(144, 75%, 35%);
+  }
+  60% {
+    background-color: hsl(180, 75%, 35%);
+  }
+  70% {
+    background-color: hsl(176, 60%, 45%);
+  }
+  80% {
+    background-color: #00dc82;
+  }
+  90% {
+    background-color: hsl(108, 65%, 35%);
   }
 }
 </style>

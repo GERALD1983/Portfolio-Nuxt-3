@@ -1,8 +1,10 @@
 <template>
   <div>
-    <div id="backMaPage">salut</div>
-    je suis la page 1
     <Nav />
+    <Banniere />
+    je suis la page 1
+
+    <NuxtWelcome />
 
     <div id="titreProjet">salut</div>
     <div class="ancreForm">salut</div>
