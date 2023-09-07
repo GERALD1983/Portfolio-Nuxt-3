@@ -1,7 +1,8 @@
 <template>
+  <div id="nav-invisible"></div>
   <div id="nav" class="nav-size flex-around">
-    <div @click="toTop" class="ombre-nav">
-      <Logo />
+    <div @click="toTop">
+      <Logo class="logo-nav" />
     </div>
 
     <div class="nav-projet flex-center">
@@ -18,10 +19,10 @@
         <h5 class="color-grey-letter">Contact</h5>
       </div>
     </div>
-    <div class="ombre-nav flex-center">
-      <h5 class="color-grey-letter">git</h5>
-      <h5 class="color-grey-letter">twit</h5>
-      <h5 class="color-grey-letter">link</h5>
+    <div class="social-nav flex-around">
+      <IconsLinkedin class="color-social" />
+      <IconsPhoneicon class="color-social" />
+      <IconsGiticon class="color-social" />
     </div>
   </div>
 </template>
@@ -30,6 +31,7 @@
 import jump from "jump.js";
 onMounted(() => {
   var navbar = document.getElementById("nav") as HTMLElement;
+  var navInvisible = document.getElementById("nav-invisible") as HTMLElement;
   var header = document.getElementById("backMaPage") as HTMLElement;
   var visible = navbar.offsetHeight;
   console.log(visible);
@@ -38,15 +40,22 @@ onMounted(() => {
     console.log(scrollValue);
     if (scrollValue > visible) {
       navbar.classList.add("nav-fixed");
-    } else {
+      navInvisible.classList.add("nav-ghost");
+    } else if (scrollValue == 0) {
+      navbar.classList.add("nav-ombre-inverse");
       navbar.classList.remove("nav-fixed");
+      navInvisible.classList.remove("nav-ghost");
+    } else {
+      navbar.classList.remove("nav-ombre-inverse");
+      navbar.classList.remove("nav-fixed");
+      navInvisible.classList.remove("nav-ghost");
     }
   });
 });
 
 function toTop() {
   // window.scrollTo(0, 400);
-  jump("#backMaPage", {
+  jump(".back-ma-page", {
     duration: 1000,
     callback: () => console.log("Saut terminé!"),
   });
@@ -98,6 +107,19 @@ const toProject = () => {
   width: 100%;
   /* border-bottom: 0.1px solid grey; */
 }
+.nav-ghost {
+  height: 80px;
+  /* background-color: white; */
+  display: block;
+  opacity: 1;
+  width: 100%;
+}
+.nav-ombre-inverse {
+  box-shadow: 0 0 0 0 rgb(23, 255, 236);
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+  animation-name: pulseinverse;
+}
 .ombre-nav {
   cursor: pointer;
 }
@@ -110,6 +132,10 @@ const toProject = () => {
 }
 .nav-projet {
   width: 80%;
+}
+.logo-nav {
+  cursor: pointer;
+  margin-left: 50px;
 }
 .bordure-logo {
   margin-left: 30px;
@@ -131,5 +157,31 @@ const toProject = () => {
   cursor: pointer;
   /* border: 0.1px solid #ffdea4; */
   /*border: 1mm ridge#ffdea4;*/
+}
+.social-nav {
+  width: 150px;
+  margin-right: 50px;
+}
+.color-social {
+  color: #3f3f46;
+  cursor: pointer;
+}
+.color-social:hover {
+  color: #767685;
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.01);
+  }
+}
+@keyframes pulseinverse {
+  0% {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.01);
+    border: -1px solid rgb(23, 255, 236);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>

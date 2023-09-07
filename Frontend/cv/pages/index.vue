@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="back-ma-page">
     <Nav />
     <Banniere />
     je suis la page 1

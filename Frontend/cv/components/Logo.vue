@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-name">
+  <div class="border-logo-name flex-name">
     <div class="container">
       <div class="cube font-cube-logo">
         <div class="face front flex-name">JS</div>
@@ -30,8 +30,11 @@
 }
 .name-society {
   margin-left: 40px;
-  color: black;
+  color: rgb(23, 23, 23);
   font-weight: bolder;
+}
+.border-logo-name {
+  border-radius: 0.5em;
 }
 .flex-name {
   display: flex;
