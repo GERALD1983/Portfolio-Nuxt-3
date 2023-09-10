@@ -57,43 +57,41 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "maPage",
+<script setup lang="ts">
+const afficherMasquer = () => {
+  let remplaceDialPhoto = document.getElementById(
+    "remplace-dialogue",
+  ) as HTMLElement;
+  let dialPhoto = document.getElementById("dial-photo") as HTMLElement;
+  let dialogue1 = document.getElementById("dialogue1") as HTMLElement;
+  let dialogue2 = document.getElementById("dialogue2") as HTMLElement;
+  let dialogue3 = document.getElementById("dialogue3") as HTMLElement;
 
-  created() {},
+  if (dialPhoto.style.display == "none" || dialPhoto.style.display == "") {
+    dialPhoto.style.display = "block";
+    remplaceDialPhoto.style.display = "none";
+    dialogue2.style.display = "none";
+    dialogue3.style.display = "none";
+    dialogue1.classList.add("dialogue1");
 
-  methods: {
-    afficherMasquer() {
-      let remplaceDialPhoto = document.getElementById("remplace-dialogue");
-      let dialPhoto = document.getElementById("dial-photo");
-      let dialogue1 = document.getElementById("dialogue1");
-      let dialogue2 = document.getElementById("dialogue2");
-      let dialogue3 = document.getElementById("dialogue3");
-
-      if (dialPhoto.style.display == "none" || dialPhoto.style.display == "") {
-        dialPhoto.style.display = "block";
-        remplaceDialPhoto.style.display = "none";
-        dialogue2.style.display = "none";
-        dialogue3.style.display = "none";
-        dialogue1.classList.add("dialogue1");
-        setTimeout(() => {
-          dialogue1.classList.remove("dialogue1");
-          dialogue2.style.display = "block";
-          dialogue2.classList.add("dialogue2");
-        }, 5000);
-        setTimeout(() => {
-          dialogue1.classList.remove("dialogue1");
-          dialogue2.classList.remove("dialogue2");
-          dialogue3.style.display = "block";
-          dialogue3.classList.add("dialogue3");
-        }, 10000);
-      } else {
-        remplaceDialPhoto.style.display = "block";
-        dialPhoto.style.display = "none";
-      }
-    },
-  },
+    setTimeout(() => {
+      dialogue1.classList.remove("dialogue1");
+      dialogue2.style.display = "block";
+      dialogue2.classList.add("dialogue2");
+    }, 5000);
+    setTimeout(() => {
+      dialogue1.classList.remove("dialogue1");
+      dialogue2.classList.remove("dialogue2");
+      dialogue3.style.display = "block";
+      dialogue3.classList.add("dialogue3");
+    }, 10000);
+    console.log(dialogue1.innerText);
+    console.log(dialogue2.innerText);
+    console.log(dialogue3.innerText);
+  } else {
+    remplaceDialPhoto.style.display = "block";
+    dialPhoto.style.display = "none";
+  }
 };
 </script>
 
