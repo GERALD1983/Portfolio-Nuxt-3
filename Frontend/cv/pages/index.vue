@@ -2,7 +2,7 @@
   <div class="back-ma-page">
     <Nav />
     <Banniere />
-    <Presentation />
+    <VueCartePresentation />
     je suis la page 1
 
     <NuxtWelcome />
