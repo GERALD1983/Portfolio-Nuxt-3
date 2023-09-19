@@ -1,21 +1,27 @@
 <template lang="">
   <div id="carte">
     <div class="flex-center">
-      <img src="../assets/1710299.svg" width="270px" alt="" />
+      <img :src="propsCarte.srcImg" width="170px" alt="" />
     </div>
     <div>
       <h3 class="titre-carte">{{ propsCarte.titre }}</h3>
       <p class="sous-titre-carte">
-        Construit avec une architecture solide, une conception réactive, des
-        performances optimisées, une expérience utilisateur fluide, et une
-        gestion efficace des données. Créé pour l'efficacité, afin que vous
-        puissiez vous concentrer sur la création.
+        <span>
+          {{ propsCarte.sousTitre1 }}
+        </span>
+        <span>
+          {{ propsCarte.sousTitre2 }}
+        </span>
+        <span>
+          {{ propsCarte.sousTitre3 }}
+        </span>
       </p>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 interface ContenuCarte {
+  srcImg?: string;
   titre: string;
   sousTitre1?: string;
   sousTitre2?: string;
