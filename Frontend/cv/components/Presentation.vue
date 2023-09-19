@@ -1,19 +1,35 @@
 <template lang="">
   <div>
     <h2 class="titre-presentation">
-      Bénéficiez de
-      <span class="color-titre-presentation">5 Années d'Expériences</span>
+      {{ propsPresentation.debutTitre }}
+      <span class="color-titre-presentation">
+        {{ propsPresentation.finTitre }}</span
+      >
     </h2>
     <h3 class="sous-titre-presentation">
-      Vous vous demandez si cette expérience peut vous apportez de la valeur !
-      <br />
-      Que ce qui fait la différence à un autre développeur ?
-      <br />Une Expérience c'est avant tout une stack, une spécialité, avec mes
-      objectifs sont clairs ! Focalisés votre business !
+      <p>
+        {{ propsPresentation.sousTitre1 }}
+      </p>
+
+      <p>{{ propsPresentation.sousTitre2 }}</p>
+
+      <p>
+        {{ propsPresentation.sousTitre3 }}
+      </p>
     </h3>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+interface Presentation {
+  debutTitre: string;
+  finTitre: string;
+  sousTitre1: string;
+  sousTitre2: string;
+  sousTitre3: string;
+}
+
+const propsPresentation = defineProps<Presentation>();
+</script>
 <style>
 .titre-presentation {
   font-weight: 700;

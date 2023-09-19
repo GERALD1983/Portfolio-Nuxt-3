@@ -4,7 +4,7 @@
       <img src="../assets/1710299.svg" width="270px" alt="" />
     </div>
     <div>
-      <h3 class="titre-carte">From Scratch</h3>
+      <h3 class="titre-carte">{{ propsCarte.titre }}</h3>
       <p class="sous-titre-carte">
         Construit avec une architecture solide, une conception réactive, des
         performances optimisées, une expérience utilisateur fluide, et une
@@ -14,7 +14,16 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+interface ContenuCarte {
+  titre: string;
+  sousTitre1?: string;
+  sousTitre2?: string;
+  sousTitre3?: string;
+}
+
+const propsCarte = defineProps<ContenuCarte>();
+</script>
 <style>
 #carte {
   display: flex;
