@@ -1,34 +1,34 @@
 <template lang="">
   <div id="carte">
     <div class="flex-center">
-      <img :src="propsCarte.srcImg" width="170px" alt="" />
+      <img :src="propsCarte.srcImg" width="170px" alt="" loading="lazy" />
     </div>
     <div>
       <h3 class="titre-carte">{{ propsCarte.titre }}</h3>
-      <p class="sous-titre-carte">
-        <span>
-          {{ propsCarte.sousTitre1 }}
-        </span>
-        <span>
-          {{ propsCarte.sousTitre2 }}
-        </span>
-        <span>
-          {{ propsCarte.sousTitre3 }}
-        </span>
-      </p>
+      <div class="sous-titre-carte">
+        <clientOnly>
+          <p>
+            {{ propsCarte.sousTitre1 }}
+          </p>
+          <p>
+            {{ propsCarte.sousTitre2 }}
+          </p>
+          <p>
+            {{ propsCarte.sousTitre3 }}
+          </p>
+        </clientOnly>
+      </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-interface ContenuCarte {
-  srcImg?: string;
-  titre: string;
+const propsCarte = defineProps<{
+  srcImg: string;
+  titre?: string;
   sousTitre1?: string;
   sousTitre2?: string;
   sousTitre3?: string;
-}
-
-const propsCarte = defineProps<ContenuCarte>();
+}>();
 </script>
 <style>
 #carte {
