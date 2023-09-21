@@ -37,7 +37,7 @@ const propsCarte = defineProps<{
   width: 30%;
   height: 30%;
   padding: 20px;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   border: 1px solid #e5e7eb;
 }
 .color-img-carte {
