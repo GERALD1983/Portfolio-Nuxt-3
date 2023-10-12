@@ -1,12 +1,21 @@
 <template lang="">
   <div>
     <div>
-      <Presentation />
+      <Presentation
+        debutTitre="Bénéficiez de"
+        finTitre="5 Années
+      d'Expériences"
+        sousTitre1=" Vous vous demandez si cette expérience peut
+      vous apportez de la valeur !"
+        sousTitre2="Que ce qui fait la différence à un autre développeur ?"
+        sousTitre3="Une Expérience c'est avant tout une stack, une spécialité, avec mes
+        objectifs sont clairs ! Focalisés votre business !"
+      />
     </div>
     <div class="flex-around lot-de-carte">
-      <Carte />
-      <Carte />
-      <Carte />
+      <Carte titre="Scratcher" />
+      <Carte titre="Skiller" />
+      <Carte titre="Puncher" />
     </div>
   </div>
 </template>
