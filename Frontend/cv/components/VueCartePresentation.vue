@@ -13,9 +13,33 @@
       />
     </div>
     <div class="flex-around lot-de-carte">
-      <Carte titre="Scratcher" />
-      <Carte titre="Skiller" />
-      <Carte titre="Puncher" />
+      <!-- <Carte
+        srcImg="../assets/1710299.svg"
+        titre="Scratcher"
+        sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
+        sousTitre2="une expérience utilisateur fluide, et une
+        gestion efficace des données."
+        sousTitre3="Créé pour l'efficacité, afin que vous
+        puissiez vous concentrer sur la création."
+      />
+      <Carte
+        srcImg="../assets/2128601.svg"
+        titre="Skiller"
+        sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
+        sousTitre2="une expérience utilisateur fluide, et une
+        gestion efficace des données."
+        sousTitre3="Créé pour l'efficacité, afin que vous
+        puissiez vous concentrer sur la création."
+      />
+      <Carte
+        srcImg="../assets/1710299.svg"
+        titre="Puncher"
+        sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
+        sousTitre2="une expérience utilisateur fluide, et une
+        gestion efficace des données."
+        sousTitre3="Créé pour l'efficacité, afin que vous
+        puissiez vous concentrer sur la création."
+      /> -->
     </div>
   </div>
 </template>

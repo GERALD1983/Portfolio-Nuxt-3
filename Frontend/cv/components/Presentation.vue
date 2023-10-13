@@ -6,7 +6,7 @@
         {{ propsPresentation.finTitre }}</span
       >
     </h2>
-    <h3 class="sous-titre-presentation">
+    <div class="sous-titre-presentation">
       <p>
         {{ propsPresentation.sousTitre1 }}
       </p>
@@ -16,7 +16,7 @@
       <p>
         {{ propsPresentation.sousTitre3 }}
       </p>
-    </h3>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
