@@ -1,6 +1,6 @@
 <template lang="">
   <div id="carte">
-    <div class="flex-center">
+    <div class="flex-center fond-image">
       <img :src="propsCarte.srcImg" width="170px" alt="" loading="lazy" />
     </div>
     <div>
@@ -38,7 +38,12 @@ const propsCarte = defineProps<{
   height: 30%;
   padding: 20px;
   /* border-radius: 1em; */
-  border: 1px solid #e5e7eb;
+  /* border: 1px solid #e2e5ec; */
+}
+.fond-image {
+  width: 100%;
+  height: 200px;
+  background-color: #eaeaea85;
 }
 .color-img-carte {
   color: linear-gradient(120deg, #00dc82 0%, #36e4da 100%);
