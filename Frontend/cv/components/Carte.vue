@@ -42,8 +42,8 @@ const propsCarte = defineProps<{
 }
 .fond-image {
   width: 100%;
-  height: 200px;
-  background-color: #eaeaea85;
+  height: 150px;
+  background-color: #f0f0f085;
 }
 .color-img-carte {
   color: linear-gradient(120deg, #00dc82 0%, #36e4da 100%);
