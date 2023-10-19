@@ -7,6 +7,11 @@
         <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
         <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
         <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
       </div>
     </div>
     <div class="absolute-left"></div>
@@ -28,7 +33,7 @@
   left: 0;
 
   /* test
-  
+
   background: linear-gradient(
     to right,
     #ffffff 50%,
@@ -61,14 +66,19 @@
   height: 100%;
 }
 .sliders {
-  width: 100%;
+  /* width: calc(2 * 370px * 5); */
+  /* width: 100%; */
+  width: calc(370px * 5);
 
   overflow: hidden;
 }
 
 .slides {
+  --slider-inner-width: 1500px;
+  /* width: calc(2 * 370px * 5); */
+  /* width: calc(30% * 5); */
   width: calc(370px * 5);
-  animation: defile 20s infinite linear;
+  animation: scroll 20s infinite linear;
   animation-play-state: running;
 }
 .slides:hover {
@@ -85,6 +95,14 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(calc((0px - var(--slider-inner-width)) - 6%));
   }
 }
 </style>
