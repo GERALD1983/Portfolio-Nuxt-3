@@ -5,6 +5,8 @@
     <VueCartePresentation />
     je suis la page 1
 
+    <SliderProjet />
+
     <NuxtWelcome />
 
     <div id="titreProjet">salut</div>
