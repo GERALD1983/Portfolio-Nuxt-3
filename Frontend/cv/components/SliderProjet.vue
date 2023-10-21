@@ -1,21 +1,38 @@
 <template>
-  <div class="relative flex-around">
-    <div class="sliders">
-      <div class="slides flex-around">
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-        <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-      </div>
+  <div>
+    <div class="flex-center">
+      <h2 class="titre-competences">
+        Des Projets et des atouts
+        <span class="color-titre-competences">
+          à apporté à vos propres projets ?</span
+        >
+      </h2>
     </div>
-    <div class="absolute-left"></div>
-    <div class="absolute-right"></div>
+    <div class="flex-center">
+      <h3 class="sous-titre-competences">
+        De la flexibilité à la complexité, du valorisant au performant ceux qui
+        m'ont fait confiance, améliorent leur entreprise.
+      </h3>
+    </div>
+
+    <div class="relative flex-around">
+      <div class="sliders">
+        <div class="slides flex-around">
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+        </div>
+      </div>
+      <div class="absolute-left"></div>
+      <div class="absolute-right"></div>
+    </div>
   </div>
 </template>
 <script setup lang="ts"></script>

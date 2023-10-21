@@ -14,6 +14,9 @@
         proposition pour vos idées, vos objectifs et vos performances.
       </h3>
     </div>
+    <section>
+      <CompetenceCarte />
+    </section>
   </div>
 </template>
 <script setup lang="ts"></script>
