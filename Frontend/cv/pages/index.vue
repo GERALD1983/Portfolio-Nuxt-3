@@ -10,6 +10,8 @@
 
     <PresentationCompetences />
 
+    <Objectif />
+
     <NuxtWelcome />
 
     <div id="titreProjet">salut</div>
