@@ -3,9 +3,12 @@
     <Nav />
     <Banniere />
     <VueCartePresentation />
-    je suis la page 1
 
     <SliderProjet />
+
+    <VueCarteExperience />
+
+    <PresentationCompetences />
 
     <NuxtWelcome />
 

@@ -30,7 +30,7 @@ interface Presentation {
 
 const propsPresentation = defineProps<Presentation>();
 </script>
-<style>
+<style scoped>
 .titre-presentation {
   font-weight: 700;
   font-size: 3em;

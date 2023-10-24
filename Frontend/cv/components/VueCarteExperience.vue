@@ -1,21 +1,20 @@
 <template lang="">
-  <div>
+  <div class="experience">
     <div>
       <ClientOnly>
         <Presentation
-          debutTitre="Bénéficiez de"
-          finTitre="5 Années
-        d'Expériences"
-          sousTitre1=" Vous vous demandez si cette expérience peut
-        vous apportez de la valeur !"
-          sousTitre2="Que ce qui fait la différence à un autre développeur ?"
-          sousTitre3="Une Expérience c'est avant tout une stack, une spécialité, avec mes
-          objectifs sont clairs ! Focalisés votre business !"
+          debutTitre="Développons"
+          finTitre="une application de qualité"
+          sousTitre1="en maîtrisant le code source.
+Mieux,"
+          sousTitre2="en réduisants le code inutile, optimisant le SEO et le référencements"
+          sousTitre3="en factorisants les codes pour une lecture plus simple et une collaboration élaborée"
         />
       </ClientOnly>
     </div>
     <div class="flex-around lot-de-carte">
       <Carte
+        class="box"
         srcImg="../assets/1710299.svg"
         titre="Scratcher"
         sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
@@ -25,6 +24,7 @@
           puissiez vous concentrer sur la création."
       />
       <Carte
+        class="box"
         srcImg="../assets/2128601.svg"
         titre="Skiller"
         sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
@@ -35,6 +35,7 @@
       />
 
       <Carte
+        class="box"
         srcImg="../assets/1710299.svg"
         titre="Puncher"
         sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
@@ -48,8 +49,8 @@
 </template>
 <script setup lang="ts"></script>
 <style>
-.lot-de-carte {
+/* .lot-de-carte {
   margin-left: 30px;
   margin-right: 30px;
-}
+} */
 </style>

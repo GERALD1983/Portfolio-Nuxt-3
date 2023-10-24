@@ -75,10 +75,11 @@
 }
 
 .box:hover {
+  cursor: pointer;
   -webkit-animation: bg-spin 3s linear infinite;
   animation: bg-spin 3s linear infinite;
 
-  --border-size: 2px;
+  --border-size: 6px;
   --border-angle: 0turn;
 
   border: 1px solid rgba(255, 255, 255, 0) !important;
