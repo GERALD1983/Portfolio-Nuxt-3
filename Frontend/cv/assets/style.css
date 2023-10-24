@@ -29,6 +29,13 @@
   align-items: center;
   align-content: center;
 }
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
 .flex-column-around {
   display: flex;
   flex-direction: column;

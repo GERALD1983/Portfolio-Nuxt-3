@@ -48,7 +48,7 @@ const propsCarte = defineProps<{
 #carte-objectif:hover {
   background: linear-gradient(120deg, #afffde5e 0%, #e0fffd3e 100%);
   border: 1px solid #04c26c !important;
-  transform: scale(1.02);
+  transform: scale(1.01);
   box-shadow: 8px 8px 12px #aaa;
   cursor: pointer;
 }

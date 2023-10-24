@@ -12,10 +12,12 @@
 
     <Objectif />
 
-    <NuxtWelcome />
+    <Footer />
+
+    <!-- <NuxtWelcome />
 
     <div id="titreProjet">salut</div>
-    <div class="ancreForm">salut</div>
+    <div class="ancreForm">salut</div> -->
   </div>
 </template>
 <script setup lang="ts">
