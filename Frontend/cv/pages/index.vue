@@ -14,9 +14,9 @@
 
     <Footer />
 
-    <!-- <NuxtWelcome />
+    <!-- <NuxtWelcome /> -->
 
-    <div id="titreProjet">salut</div>
+    <!-- <div id="titreProjet">salut</div>
     <div class="ancreForm">salut</div> -->
   </div>
 </template>

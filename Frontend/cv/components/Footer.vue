@@ -1,13 +1,18 @@
 <template>
   <div class="fond-footer">
-    <section class="flex-around haut-footer">
+    <section class="flex-between haut-footer">
       <aside class="flex-around">
         <div class="categories flex-column-start">
           <h5 class="titre-categories">Contact</h5>
 
           <a href=""
             >Nuxters
-            <span> <Icon name="uil:github" size="15px" color="grey" /></span
+            <span>
+              <Icon
+                class="span-icon-arrow"
+                name="uil:arrow-up-right"
+                size="14px"
+                color="rgb(196, 196, 196)" /></span
           ></a>
           <a href="">Nuxters</a>
           <a href="">Nuxters</a>
@@ -45,7 +50,29 @@
         </div>
       </div>
     </section>
-    <section class="bas-footer"></section>
+    <section class="bas-footer flex-between">
+      <p>Copyright © 2012-2026 GF Tech - License</p>
+      <div>
+        <Icon
+          class="icon-footer"
+          name="uil:linkedin"
+          size="25px"
+          color="#0F172A"
+        />
+        <Icon
+          class="icon-footer"
+          name="uil:github"
+          size="25px"
+          color="#0F172A"
+        />
+        <Icon
+          class="icon-footer"
+          name="uil:github"
+          size="25px"
+          color="#0F172A"
+        />
+      </div>
+    </section>
   </div>
 </template>
 <script></script>
@@ -83,6 +110,10 @@
 .titre-categories {
   color: #0f172a;
 }
+.span-icon-arrow {
+  padding-bottom: 7px;
+}
+
 .adress {
   width: 384px;
   height: 192px;
@@ -103,8 +134,17 @@
   height: 32px;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 152px;
+  padding-left: 152px;
+}
+.bas-footer > p {
+  color: #6d7c92;
+  font-size: smaller;
+  font-weight: 400;
+}
+.icon-footer {
+  padding: 0 7px;
+  color: rgb(196, 196, 196);
 }
 </style>
 
