@@ -75,7 +75,7 @@
     </section>
   </div>
 </template>
-<script></script>
+<script setup></script>
 <style>
 .fond-footer {
   margin-top: 120px;

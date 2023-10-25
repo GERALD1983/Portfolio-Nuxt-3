@@ -1,3 +1,29 @@
+<template>
+  <div>
+    <section class="flex-column-center">
+      <h2>CONTACT</h2>
+      <h3><span>PRENDRE RENDEZ VOUS</span></h3>
+
+      <form class="flex-around" action="">
+        <div class="flex-column-center">
+          <label for="email">Email *</label>
+          <input type="email" />
+          <label for="text">Nom *</label>
+          <input type="text" />
+          <label for="phone">Téléphone *</label>
+          <input type="phone" />
+        </div>
+        <div class="flex-column-center">
+          <label for="message">Message *</label>
+          <input type="text-area" />
+        </div>
+      </form>
+    </section>
+  </div>
+</template>
+<script></script>
+<style></style>
+
 <!-- <template>
   <div>
     <b-form @submit.prevent="submit" @reset="onReset" v-if="show">

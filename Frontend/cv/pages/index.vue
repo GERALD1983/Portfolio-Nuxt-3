@@ -11,7 +11,7 @@
     <PresentationCompetences />
 
     <Objectif />
-
+    <Form />
     <Footer />
 
     <!-- <NuxtWelcome /> -->
