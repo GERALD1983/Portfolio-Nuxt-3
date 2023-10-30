@@ -6,4 +6,5 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   css: ["assets/style.css"],
+  modules: ["nuxt-icon"],
 });

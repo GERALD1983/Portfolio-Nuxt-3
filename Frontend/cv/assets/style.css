@@ -29,6 +29,13 @@
   align-items: center;
   align-content: center;
 }
+.flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
 .color-grey-letters {
   color: #71717a;
 }
