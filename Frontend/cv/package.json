@@ -18,6 +18,8 @@
     "vue-tsc": "^1.8.8"
   },
   "dependencies": {
-    "jump.js": "^1.0.2"
+    "axios": "^1.5.1",
+    "jump.js": "^1.0.2",
+    "vuelidate": "^0.7.7"
   }
 }
