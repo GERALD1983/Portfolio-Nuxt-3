@@ -1,6 +1,6 @@
 <template>
   <div class="back-ma-page">
-    <Nav />
+    <Navigation />
     <Banniere />
     <VueCartePresentation />
 
@@ -11,8 +11,8 @@
     <PresentationCompetences />
 
     <Objectif />
-    <Form />
-    <Footer />
+    <Formulaire />
+    <FooterElement />
 
     <!-- <NuxtWelcome /> -->
 

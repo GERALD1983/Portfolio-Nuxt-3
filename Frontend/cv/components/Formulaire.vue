@@ -1,28 +1,122 @@
 <template>
   <div>
     <section class="flex-column-center">
-      <h2>CONTACT</h2>
-      <h3><span>PRENDRE RENDEZ VOUS</span></h3>
+      <div class="flex-column-center">
+        <h2 class="titre-contact">CONTACT</h2>
+        <h3 class="flex-column-center">
+          <span class="titre-formulaire color-titre-formulaire"
+            >PRENDRE RENDEZ VOUS</span
+          >
+          <span class="titre-trait-span"></span>
+        </h3>
+      </div>
 
       <form class="flex-around" action="">
-        <div class="flex-column-center">
+        <div class="flex-column-start">
           <label for="email">Email *</label>
-          <input type="email" />
+          <input type="email" placeholder="Enter your e-mail here..." />
           <label for="text">Nom *</label>
-          <input type="text" />
+          <input type="text" placeholder="Enter your name here..." />
           <label for="phone">Téléphone *</label>
-          <input type="phone" />
+          <input type="phone" placeholder="Enter your phone here..." />
         </div>
-        <div class="flex-column-center">
+        <div class="flex-column-start">
           <label for="message">Message *</label>
-          <input type="text-area" />
+          <textarea
+            class="input-message"
+            type="text-area"
+            placeholder="Please enter your message here..."
+            rows="5"
+            wrap="soft"
+            aria-required="true"
+          ></textarea>
         </div>
       </form>
     </section>
   </div>
 </template>
-<script></script>
-<style></style>
+<script setup>
+// onMounted(() => {
+//   const inputElement = document.querySelector(".input-message");
+
+//   function moveCursorToBeginning() {
+//     console.log(inputElement);
+//     inputElement.setSelectionRange(5, 5);
+//   }
+
+//   inputElement.addEventListener("focus", moveCursorToBeginning);
+// });
+</script>
+<style>
+.titre-trait-span {
+  width: 30%;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 5px;
+  border-image: linear-gradient(120deg, #00dc82 0%, #36e4da 100%) 1;
+  margin-bottom: 100px;
+}
+.titre-contact {
+  color: rgb(193, 193, 193);
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 0.5ch;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.titre-formulaire {
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+.color-titre-formulaire {
+  background: linear-gradient(120deg, #00dc82 0%, #36e4da 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form {
+  width: 80%;
+}
+form > div {
+  width: 50%;
+  height: 100%;
+}
+label {
+  margin-left: 5%;
+  width: 90%;
+  font-weight: 500;
+}
+input {
+  height: 40px;
+  width: 90%;
+  margin: 5%;
+  border-radius: 3px;
+  border: 1px solid rgb(196, 196, 196);
+  padding-left: 10px;
+}
+.input-message {
+  height: 290px;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  resize: vertical;
+}
+input::placeholder {
+  color: rgb(196, 196, 196);
+}
+input:focus-visible {
+  border: 1px solid transparent;
+  outline: 1px solid rgb(47, 255, 127);
+}
+.input-message::placeholder {
+  position: absolute;
+  top: 12px;
+}
+.input-message:focus-visible {
+  outline-offset: 0px;
+}
+</style>
 
 <!-- <template>
   <div>
