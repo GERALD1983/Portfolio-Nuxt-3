@@ -13,25 +13,43 @@
 
       <form class="flex-around" action="">
         <div class="flex-column-start">
-          <label for="email">Email *</label>
+          <label for="email">Email <span class="etoile-label">*</span></label>
           <input type="email" placeholder="Enter your e-mail here..." />
-          <label for="text">Nom *</label>
+          <label for="text">Nom <span class="etoile-label">*</span></label>
           <input type="text" placeholder="Enter your name here..." />
-          <label for="phone">Téléphone *</label>
+          <label for="phone"
+            >Téléphone <span class="etoile-label">*</span></label
+          >
           <input type="phone" placeholder="Enter your phone here..." />
         </div>
         <div class="flex-column-start">
-          <label for="message">Message *</label>
-          <textarea
+          <label for="message"
+            >Message <span class="etoile-label">*</span></label
+          >
+          <input
             class="input-message"
             type="text-area"
             placeholder="Please enter your message here..."
             rows="5"
             wrap="soft"
             aria-required="true"
-          ></textarea>
+          />
         </div>
       </form>
+      <div class="content-all-button flex-around">
+        <button id="bouton-reset" type="reset">Reset</button>
+        <button id="bouton-submit" type="submit">
+          <span>
+            <Icon
+              class="icon-plane"
+              name="ion:ios-paper-plane"
+              size="20px"
+              color="white"
+            />
+          </span>
+          Get Contact
+        </button>
+      </div>
     </section>
   </div>
 </template>
@@ -47,7 +65,7 @@
 //   inputElement.addEventListener("focus", moveCursorToBeginning);
 // });
 </script>
-<style>
+<style scoped>
 .titre-trait-span {
   width: 30%;
   border-style: solid;
@@ -87,6 +105,9 @@ label {
   width: 90%;
   font-weight: 500;
 }
+.etoile-label {
+  color: red;
+}
 input {
   height: 40px;
   width: 90%;
@@ -99,8 +120,6 @@ input {
   height: 290px;
   width: 100%;
   position: relative;
-  overflow: auto;
-  resize: vertical;
 }
 input::placeholder {
   color: rgb(196, 196, 196);
@@ -115,6 +134,46 @@ input:focus-visible {
 }
 .input-message:focus-visible {
   outline-offset: 0px;
+}
+.content-all-button {
+  width: 80%;
+}
+#bouton-reset {
+  width: 120px;
+  height: 51px;
+  border: 1px solid rgb(67, 255, 111);
+  border-radius: 20px;
+  background-color: #ededed;
+  color: rgb(56, 56, 56);
+  cursor: grabbing;
+}
+#bouton-reset:hover {
+  border: 2px solid rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(139, 139, 139);
+  cursor: grabbing;
+  transform: scale(0.95);
+}
+#bouton-submit {
+  font-size: 17px;
+  width: 250px;
+  height: 50px;
+  border: 3px solid rgb(67, 255, 111);
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+#bouton-submit:hover {
+  border: 3px solid rgb(67, 255, 111);
+  background-color: rgb(0, 21, 5);
+  color: rgb(0, 255, 166);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.icon-plane {
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
 </style>
 
