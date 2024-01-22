@@ -11,9 +11,7 @@
       </div>
     </div>
     <div class="name-society">
-      <h2>GF</h2>
-
-      <h2>Tech</h2>
+      <h3>GF Tech</h3>
     </div>
   </div>
 </template>
@@ -50,8 +48,8 @@
 .container {
   width: 35px;
   height: 35px;
-  perspective: 300px;
-  margin: 0px 0px 0px 20px;
+  perspective: 100px;
+  margin: 0px 0px 0px 30px;
 }
 
 .cube {
@@ -66,7 +64,7 @@
   position: absolute;
   width: 35px;
   height: 35px;
-  border: 1px solid grey;
+  border: 1px solid rgb(212, 212, 212);
 }
 
 .top {

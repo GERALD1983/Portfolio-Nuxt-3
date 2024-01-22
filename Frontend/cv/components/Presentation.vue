@@ -16,6 +16,9 @@
       <p>
         {{ propsPresentation.sousTitre3 }}
       </p>
+      <p>
+        {{ propsPresentation.sousTitre4 }}
+      </p>
     </div>
   </div>
 </template>
@@ -23,9 +26,10 @@
 interface Presentation {
   debutTitre: string;
   finTitre: string;
-  sousTitre1: string;
-  sousTitre2: string;
-  sousTitre3: string;
+  sousTitre1?: string;
+  sousTitre2?: string;
+  sousTitre3?: string;
+  sousTitre4?: string;
 }
 
 const propsPresentation = defineProps<Presentation>();

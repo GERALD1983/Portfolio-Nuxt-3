@@ -4,21 +4,22 @@
       <ClientOnly>
         <Presentation
           debutTitre="Bénéficiez de"
-          finTitre="5 Années
+          finTitre="10 Années
       d'Expériences"
           sousTitre1=" Vous vous demandez si cette expérience peut
       vous apportez de la valeur !"
           sousTitre2="Que ce qui fait la différence à un autre développeur ?"
           sousTitre3="Une Expérience c'est avant tout une stack, une spécialité, avec mes
         objectifs sont clairs ! Focalisés votre business !"
+          sousTitre4="3 Types d'offres à disposition : "
         />
       </ClientOnly>
     </div>
     <div class="flex-around lot-de-carte">
       <Carte
         class="box"
-        srcImg="../assets/1710299.svg"
-        titre="Scratcher"
+        srcImg="../assets/dev-wordpress-prestashop.png"
+        titre="Création Site Wordpress Prestashop (Selon Dispo)"
         sousTitre1="Peut vous apportez de la valeur !"
         sousTitre2="Expérience utilisateur fluide,
         gestion efficace des données."
@@ -26,8 +27,8 @@
       />
       <Carte
         class="box"
-        srcImg="../assets/1710299.svg"
-        titre="Scratcher"
+        srcImg="../assets/developpeur-vue-nuxt-typescript.jpg"
+        titre="Projet Clés en Main de A à Z (Forfait sur Mesure)"
         sousTitre1="Peut vous apportez de la valeur !"
         sousTitre2="Expérience utilisateur fluide,
         gestion efficace des données."
@@ -35,8 +36,8 @@
       />
       <Carte
         class="box"
-        srcImg="../assets/1710299.svg"
-        titre="Scratcher"
+        srcImg="../assets/developpeur-vue-node.jpg"
+        titre="Mes Services en Régie (Cours ou Long terme)"
         sousTitre1="Peut vous apportez de la valeur !"
         sousTitre2="Expérience utilisateur fluide,
         gestion efficace des données."
