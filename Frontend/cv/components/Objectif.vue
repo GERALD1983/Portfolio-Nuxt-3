@@ -97,7 +97,7 @@
     </div>
   </div>
 </template>
-<script></script>
+<script setup></script>
 <style>
 .content-all-section-objectif {
   width: 100%;

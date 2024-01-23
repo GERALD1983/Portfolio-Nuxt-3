@@ -48,7 +48,7 @@
     <div class="absolute-right"></div>
   </div>
 </template>
-<script></script>
+<script setup></script>
 <style scoped>
 #slide1,
 #slide2,
