@@ -2,7 +2,7 @@
   <div>
     <div class="flex-center">
       <h2 class="titre-competences">
-        Des Projets et des atouts
+        Des Solutions des atouts
         <span class="color-titre-competences">
           à apporté à vos propres projets ?</span
         >
@@ -18,11 +18,19 @@
     <div class="relative flex-around">
       <div class="sliders">
         <div class="slides flex-around">
+          <div class="slide">
+            <img src="../assets/opticien370.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../assets/GROUPOMANIA370.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../assets/audio370.jpg" alt="" />
+          </div>
           <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
-          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
+          <div class="slide">
+            <img src="../assets/CHOUETTE370.jpg" alt="" />
+          </div>
         </div>
       </div>
       <div class="absolute-left"></div>

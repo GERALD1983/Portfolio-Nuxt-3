@@ -98,7 +98,7 @@ const afficherMasquer = () => {
 <style scoped>
 #back-page {
   width: 100%;
-  height: 720px;
+  height: 620px;
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -120,6 +120,7 @@ const afficherMasquer = () => {
   background: #ededed;
   color: rgb(111, 111, 111);
   cursor: pointer;
+  border: none;
 }
 #bouton-version:hover {
   background: #dbdbdb;
@@ -134,6 +135,7 @@ const afficherMasquer = () => {
   border-radius: 13px;
   color: white;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 #bouton-version-bottom {
   margin-left: 20px;
@@ -144,6 +146,7 @@ const afficherMasquer = () => {
   background: #ededed;
   color: rgb(111, 111, 111);
   cursor: pointer;
+  border: none;
 }
 #bouton-version-bottom:hover {
   background: #dbdbdb;

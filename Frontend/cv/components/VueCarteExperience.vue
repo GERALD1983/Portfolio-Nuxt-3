@@ -3,12 +3,13 @@
     <div>
       <ClientOnly>
         <Presentation
-          debutTitre="Développons"
+          debutTitre="Développons ensemble"
           finTitre="une application de qualité"
-          sousTitre1="en maîtrisant le code source.
-Mieux,"
-          sousTitre2="en réduisants le code inutile, optimisant le SEO et le référencements"
-          sousTitre3="en factorisants les codes pour une lecture plus simple et une collaboration élaborée"
+          sousTitre1="Comment ? en maîtrisant le code source.
+Mieux encore,"
+          sousTitre2="en réduisants le code inutile, en optimisant le SEO et le référencements"
+          sousTitre3=" et en factorisants les codes pour une lecture plus simple et une collaboration élaborée"
+          sousTitre4="Ce que je vous propose au Forfait :"
         />
       </ClientOnly>
     </div>
@@ -16,7 +17,7 @@ Mieux,"
       <Carte
         class="box"
         srcImg="../assets/1710299.svg"
-        titre="Scratcher"
+        titre="Application Frontend"
         sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
         sousTitre2="une expérience utilisateur fluide, et une
           gestion efficace des données."
@@ -26,7 +27,7 @@ Mieux,"
       <Carte
         class="box"
         srcImg="../assets/2128601.svg"
-        titre="Skiller"
+        titre="Backend Api sur Mesure"
         sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
         sousTitre2="une expérience utilisateur fluide, et une
           gestion efficace des données."
@@ -37,7 +38,7 @@ Mieux,"
       <Carte
         class="box"
         srcImg="../assets/1710299.svg"
-        titre="Puncher"
+        titre="Systéme Complet Start Up"
         sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
         sousTitre2="une expérience utilisateur fluide, et une
           gestion efficace des données."
