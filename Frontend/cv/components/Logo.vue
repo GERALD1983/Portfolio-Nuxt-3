@@ -42,12 +42,12 @@
   font-weight: bolder;
 }
 .font-cube-logo {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .container {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   perspective: 100px;
   margin: 0px 0px 0px 30px;
 }
@@ -62,46 +62,46 @@
 
 .face {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   border: 1px solid rgb(212, 212, 212);
 }
 
 .top {
   background: #00dc82;
-  transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(20px);
   animation: wheelHueColor 5s infinite linear;
 }
 .bottom {
   background: #00dc82;
 
-  transform: rotateX(-90deg) translateZ(25px);
+  transform: rotateX(-90deg) translateZ(20px);
   animation: wheelHueColor 5s infinite linear;
 }
 
 .right {
   background: #00dc82;
 
-  transform: rotateY(90deg) translateZ(25px);
+  transform: rotateY(90deg) translateZ(20px);
   animation: wheelHueColor 5s infinite linear;
 }
 .left {
   background: #00dc82;
 
-  transform: rotateY(-90deg) translateZ(25px);
+  transform: rotateY(-90deg) translateZ(20px);
   animation: wheelHueColor 5s infinite linear;
 }
 
 .front {
   background: #00dc82;
 
-  transform: rotateX(0deg) translateZ(25px);
+  transform: rotateX(0deg) translateZ(20px);
   animation: wheelHueColor 5s infinite linear;
 }
 .back {
   background: #00dc82;
 
-  transform: rotateX(-180deg) translateZ(25px);
+  transform: rotateX(-180deg) translateZ(20px);
   animation: wheelHueColor 5s infinite linear;
 }
 

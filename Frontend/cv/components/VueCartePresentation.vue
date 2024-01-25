@@ -4,7 +4,7 @@
       <ClientOnly>
         <Presentation
           debutTitre="Bénéficiez de"
-          finTitre="10 Années
+          finTitre="+10 Années
       d'Expériences"
           sousTitre1=" Vous vous demandez si cette expérience peut
       vous apportez de la valeur !"
@@ -20,28 +20,29 @@
         class="box"
         srcImg="../assets/dev-wordpress-prestashop.png"
         titre="Création Site Wordpress Prestashop (Selon Dispo)"
-        sousTitre1="Peut vous apportez de la valeur !"
-        sousTitre2="Expérience utilisateur fluide,
-        gestion efficace des données."
-        sousTitre3="Créé pour l'efficacité, concentrer sur la création."
+        sousTitre1="Un site vitrine pour votre entreprise."
+        sousTitre2="Besoin de visibilité pour une société,
+         un e-commerce pour concrétisé !"
+        sousTitre3="Etudions votre projet, concentrons nous sur les résultats."
       />
       <Carte
         class="box"
         srcImg="../assets/developpeur-vue-nuxt-typescript.jpg"
         titre="Projet Clés en Main de A à Z (Forfait sur Mesure)"
-        sousTitre1="Peut vous apportez de la valeur !"
-        sousTitre2="Expérience utilisateur fluide,
-        gestion efficace des données."
-        sousTitre3="Créé pour l'efficacité, concentrer sur la création."
+        sousTitre1="Vous avez des valeurs, des objectifs."
+        sousTitre2="Vous êtes une Start Up en croissance,
+        vos besoins sont spécifiques à votre entreprise !"
+        sousTitre3="J'ai les méthodes pour votre projet,
+        une app scalable respectant votre budget."
       />
       <Carte
         class="box"
         srcImg="../assets/developpeur-vue-node.jpg"
         titre="Mes Services en Régie (Cours ou Long terme)"
-        sousTitre1="Peut vous apportez de la valeur !"
-        sousTitre2="Expérience utilisateur fluide,
-        gestion efficace des données."
-        sousTitre3="Créé pour l'efficacité, concentrer sur la création."
+        sousTitre1="Vous cherchez des consultants !"
+        sousTitre2="Vous êtes un grand groupe,
+        vous avez des besoins de migration, d'amélioration, d'innovations !"
+        sousTitre3="Collaborons ensemble, je vous offre mes services à disposition."
       />
     </div>
   </div>
