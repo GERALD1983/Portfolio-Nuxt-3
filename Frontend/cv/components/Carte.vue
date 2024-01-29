@@ -35,7 +35,7 @@ const propsCarte = defineProps<{
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 500px;
+  height: 550px;
   padding: 20px;
   margin: 50px;
   /* border-radius: 1em; */
