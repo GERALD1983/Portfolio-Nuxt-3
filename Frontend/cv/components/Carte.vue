@@ -7,14 +7,32 @@
       <h3 class="titre-carte">{{ propsCarte.titre }}</h3>
       <div class="sous-titre-carte">
         <clientOnly>
-          <p>
-            {{ propsCarte.sousTitre1 }}
-          </p>
-          <p>
-            {{ propsCarte.sousTitre2 }}
-          </p>
+          <div class="flex-start">
+            <Icon
+              name="ic:outline-check"
+              size="35px"
+              class="detail-icon-carte"
+            />
+            <p>
+              {{ propsCarte.sousTitre1 }}
+            </p>
+          </div>
+          <div class="flex-start">
+            <Icon
+              name="ic:outline-check"
+              size="35px"
+              class="detail-icon-carte"
+            />
+            <p>
+              {{ propsCarte.sousTitre2 }}
+            </p>
+          </div>
+
           <p>
             {{ propsCarte.sousTitre3 }}
+          </p>
+          <p>
+            {{ propsCarte.sousTitre4 }}
           </p>
         </clientOnly>
       </div>
@@ -28,13 +46,14 @@ const propsCarte = defineProps<{
   sousTitre1?: string;
   sousTitre2?: string;
   sousTitre3?: string;
+  sousTitre4: string;
 }>();
 </script>
 <style>
 #carte {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 25%;
   height: 550px;
   padding: 20px;
   margin: 50px;
@@ -62,6 +81,9 @@ const propsCarte = defineProps<{
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.detail-icon-carte {
+  margin: 0.5em;
 }
 .sous-titre-carte {
   --tw-text-opacity: 1;
