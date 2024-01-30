@@ -17,13 +17,18 @@ Mieux encore,"
       <Carte
         class="box"
         srcImg="../assets/1710299.svg"
-        titre="Application Frontend"
-        sousTitre1="Bénéficiez d'une expertise de premier ordre pour vos projets,
-         précis et professionnels."
-        sousTitre2="Une application Frontend sûre et fiable, répondant aux normes de
-         qualité les plus strictes."
-        sousTitre3="Une approche axée sur la performance basé sur le pouvoir de dépassé vos objectifs commerciaux.
-        La réussite de votre projet en maintenant votre budget."
+        titre="Application
+      Frontend"
+        sousTitre1="Une
+      expertise de premier ordre, précis et professionnels."
+        sousTitre2="Une
+      application Frontend sûre et fiable, aux normes de qualité les plus
+      strictes."
+        sousTitre3="La performance dépassant vos objectifs
+      commerciaux, en maintenant votre budget."
+        sousTitre4="L'engagement d'un
+      code qualité tout en maintenant l'approche innovante pour une meilleure
+      expérience utilisateur."
       />
       <Carte
         class="box"
@@ -34,18 +39,23 @@ Mieux encore,"
         sousTitre2="Connectivité Transparente avec Votre BDD: Simplifiez vos opérations à
          votre base de données avec fluidité, grâce à des méthodes éprouvées."
         sousTitre3="Développement Agile : Transformez vos idées en réalité avec notre approche agile, en créant des interconnexions fiables
-         pour vos applications et vos MVP grâce à mon expertise en API REST et backend."
+         pour vos applications et vos MVP grâce à mon expertise en API REST
+          et backend."
       />
 
       <Carte
         class="box"
         srcImg="../assets/1710299.svg"
         titre="Systéme Complet Start Up"
-        sousTitre1="Vous vous demandez si cette expérience peut vous apportez de la valeur !"
-        sousTitre2="une expérience utilisateur fluide, et une
-          gestion efficace des données."
-        sousTitre3="Créé pour l'efficacité, afin que vous
-          puissiez vous concentrer sur la création."
+        sousTitre1="Du Concept au Succès Digital! Concrétisons votre vision de
+         startup avec une expertise fullstack, vous libérant des
+         tracas techniques concentrer sur la croissance de votre entreprise."
+        sousTitre2="Un SaaS Tout-En-Un ! Vous êtes fondateur CEO CTO PO ou manager,
+         concentrer sur la stratégie développons et gérons votre plateforme
+         fullstack, offrant une solution robuste et évolutive pour votre entreprise."
+        sousTitre3="Libérez Votre Entrepreneuriat, Sans Complications! Je gère
+         l'aspect technique de votre startup avec un modèle de tarification flexible, permettant de se concentrer sur l'essentiel:
+         l'innovation et la croissance."
       />
     </div>
   </div>
