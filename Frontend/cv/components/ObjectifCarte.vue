@@ -38,12 +38,12 @@ const propsCarte = defineProps<{
 #carte-objectif {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  height: 240px;
+  width: 238px;
+  height: 173px;
   padding: 20px;
   border-radius: 1em;
   border: 1px solid #e2e5ec;
-  margin: 20px;
+  margin: 15px;
 }
 #carte-objectif:hover {
   background: linear-gradient(120deg, #afffde5e 0%, #e0fffd3e 100%);
@@ -66,6 +66,7 @@ const propsCarte = defineProps<{
   color: #cbe8ff;
 }
 .titre-carte-objectif {
+  margin-bottom: 0;
   --tw-text-opacity: 1;
   color: #18181b;
   color: rgb(24 24 27 / var(--tw-text-opacity));
@@ -78,5 +79,8 @@ const propsCarte = defineProps<{
   --tw-text-opacity: 1;
   color: #71717a;
   color: rgb(113 113 122 / var(--tw-text-opacity));
+}
+.sous-titre-carte-objectif > p {
+  margin: 0;
 }
 </style>
