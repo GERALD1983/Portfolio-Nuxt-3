@@ -17,8 +17,6 @@
 .flex-start {
   display: flex;
   justify-content: flex-start;
-  align-items: start;
-  align-content: center;
 }
 .flex-grow {
   display: flex;

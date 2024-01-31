@@ -8,32 +8,54 @@
       <div class="sous-titre-carte">
         <clientOnly>
           <div class="flex-start">
-            <Icon
-              name="ic:outline-check"
-              size="35px"
-              class="detail-icon-carte"
-            />
+            <div>
+              <Icon
+                name="ic:outline-check"
+                size="25px"
+                class="detail-icon-carte"
+              />
+            </div>
             <p>
               {{ propsCarte.sousTitre1 }}
             </p>
           </div>
           <div class="flex-start">
-            <Icon
-              name="ic:outline-check"
-              size="35px"
-              class="detail-icon-carte"
-            />
+            <div>
+              <Icon
+                name="ic:outline-check"
+                size="25px"
+                class="detail-icon-carte"
+              />
+            </div>
             <p>
               {{ propsCarte.sousTitre2 }}
             </p>
           </div>
 
-          <p>
-            {{ propsCarte.sousTitre3 }}
-          </p>
-          <p>
-            {{ propsCarte.sousTitre4 }}
-          </p>
+          <div class="flex-start">
+            <div>
+              <Icon
+                name="ic:outline-check"
+                size="25px"
+                class="detail-icon-carte"
+              />
+            </div>
+            <p>
+              {{ propsCarte.sousTitre3 }}
+            </p>
+          </div>
+          <div v-if="propsCarte.sousTitre4" class="flex-start">
+            <div>
+              <Icon
+                name="ic:outline-check"
+                size="25px"
+                class="detail-icon-carte"
+              />
+            </div>
+            <p>
+              {{ propsCarte.sousTitre4 }}
+            </p>
+          </div>
         </clientOnly>
       </div>
     </div>
@@ -53,7 +75,7 @@ const propsCarte = defineProps<{
 #carte {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
   height: 550px;
   padding: 20px;
   margin: 50px;
@@ -83,7 +105,8 @@ const propsCarte = defineProps<{
   line-height: 1.75rem;
 }
 .detail-icon-carte {
-  margin: 0.5em;
+  margin-top: 1em;
+  margin-right: 0.5em;
 }
 .sous-titre-carte {
   --tw-text-opacity: 1;
