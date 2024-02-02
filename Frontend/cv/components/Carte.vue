@@ -10,8 +10,8 @@
           <div class="flex-start">
             <div>
               <Icon
-                name="ic:outline-check"
-                size="25px"
+                name="emojione-v1:left-check-mark"
+                size="15px"
                 class="detail-icon-carte"
               />
             </div>
@@ -22,8 +22,8 @@
           <div class="flex-start">
             <div>
               <Icon
-                name="ic:outline-check"
-                size="25px"
+                name="emojione-v1:left-check-mark"
+                size="15px"
                 class="detail-icon-carte"
               />
             </div>
@@ -31,12 +31,11 @@
               {{ propsCarte.sousTitre2 }}
             </p>
           </div>
-
           <div class="flex-start">
             <div>
               <Icon
-                name="ic:outline-check"
-                size="25px"
+                name="emojione-v1:left-check-mark"
+                size="15px"
                 class="detail-icon-carte"
               />
             </div>
@@ -47,8 +46,8 @@
           <div v-if="propsCarte.sousTitre4" class="flex-start">
             <div>
               <Icon
-                name="ic:outline-check"
-                size="25px"
+                name="emojione-v1:left-check-mark"
+                size="15px"
                 class="detail-icon-carte"
               />
             </div>
@@ -68,7 +67,7 @@ const propsCarte = defineProps<{
   sousTitre1?: string;
   sousTitre2?: string;
   sousTitre3?: string;
-  sousTitre4: string;
+  sousTitre4?: string;
 }>();
 </script>
 <style>
