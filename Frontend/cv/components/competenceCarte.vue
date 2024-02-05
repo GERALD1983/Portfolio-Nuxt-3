@@ -2,16 +2,57 @@
   <div id="content-slides" class="relative flex-column-center">
     <section id="slide1" class="sliders">
       <div class="slides-gauche flex-around">
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
+        <div>
+          <img src="../assets/sql.png" alt="competence développeur sql logo" />
+        </div>
+        <div>
+          <img
+            src="../assets/postman.png"
+            alt="competence développeur postman logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/bootstrap.png"
+            alt="competence développeur bootstrap logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/cline.png"
+            alt="competence développeur en ligne de commande logo"
+          />
+        </div>
+        <div>
+          <img src="../assets/css.png" alt="competence développeur css logo" />
+        </div>
+        <div>
+          <img
+            src="../assets/gimp.png"
+            alt="competence développeur gimp logo"
+          />
+        </div>
+        <div>
+          <img src="../assets/git.png" alt="competence développeur git logo" />
+        </div>
+        <div>
+          <img
+            src="../assets/github.png"
+            alt="competence développeur github logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/html.png"
+            alt="competence développeur html logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/js.png"
+            alt="competence développeur javascript logo"
+          />
+        </div>
       </div>
     </section>
 
@@ -22,11 +63,33 @@
         <div><img src="../assets/sql.png" alt="" /></div>
         <div><img src="../assets/sql.png" alt="" /></div>
         <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
+        <div>
+          <img
+            src="../assets/vscode.png"
+            alt="competence développeur visual studio code logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/json.png"
+            alt="competence développeur json logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/mongodb.png"
+            alt="competence développeur mongodb logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/node.png"
+            alt="competence développeur Node Js logo"
+          />
+        </div>
+        <div>
+          <img src="../assets/npm.png" alt="competence développeur npm logo" />
+        </div>
       </div>
     </section>
     <section id="slide3" class="sliders">
