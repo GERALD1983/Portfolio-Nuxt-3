@@ -9,7 +9,7 @@
 Mieux encore,"
           sousTitre2="en réduisants le code inutile, en optimisant le SEO et le référencements"
           sousTitre3=" et en factorisants les codes pour une lecture plus simple et une collaboration élaborée"
-          sousTitre4="Ce que je vous propose au Forfait :"
+          sousTitre4="Voici ce que je propose au Forfait :"
         />
       </ClientOnly>
     </div>
@@ -19,43 +19,36 @@ Mieux encore,"
         srcImg="../assets/vue-nuxt-application.png"
         titre="Application
       Frontend"
-        sousTitre1="Une
-      expertise de premier ordre, précis et professionnels."
-        sousTitre2="Une
-      application Frontend sûre et fiable, aux normes de qualité les plus
-      strictes."
-        sousTitre3="La performance dépassant vos objectifs
-      commerciaux, en maintenant votre budget."
-        sousTitre4="L'engagement d'un
-      code qualité tout en maintenant l'approche innovante pour une meilleure
-      expérience utilisateur."
+        sousTitre1="Expertise de premier ordre, précis et professionnels."
+        sousTitre2="Application Frontend sûre, fiable et de qualité."
+        sousTitre3="Performance et objectifs, en maintenant votre budget."
+        sousTitre4="Code de qualité maintenant l'approche innovante."
       />
       <Carte
         class="box"
         srcImg="../assets/backend-node-api-rest.png"
         titre="Backend Api sur Mesure"
-        sousTitre1="Protection de Données Inébranlable: J'assure la sécurité totale des données de vos clients, offrant une protection robuste
-         contre les menaces potentielles pour votre tranquillité d'esprit."
-        sousTitre2="Connectivité Transparente avec Votre BDD: Simplifiez vos opérations à
-         votre base de données avec fluidité, grâce à des méthodes éprouvées."
-        sousTitre3="Développement Agile : Transformez vos idées en réalité avec notre approche agile, en créant des interconnexions fiables
-         pour vos applications et vos MVP grâce à mon expertise en API REST
-          et backend."
+        sousTitre1="Protection de Données Inébranlable : Sécurité totale
+         des données clients."
+        sousTitre2="Connectivité Transparente avec Votre BDD : Fluidité,
+         simplifiez vos opérations"
+        sousTitre3="Développement Agile : Interconnexions fiables
+         sur vos applications et MVP"
+        sousTitre4="Des technologies de pointe : Au service de votre data."
       />
 
       <Carte
         class="box"
         srcImg="../assets/startup-application-node-vue-typescript.png"
         titre="Systéme Complet Start Up"
-        sousTitre1="Du Concept au Succès Digital! Concrétisons votre vision de
-         startup avec une expertise fullstack, vous libérant des
-         tracas techniques concentrer sur la croissance de votre entreprise."
-        sousTitre2="Un SaaS Tout-En-Un ! Vous êtes fondateur CEO CTO PO ou manager,
-         concentrer sur la stratégie développons et gérons votre plateforme
-         fullstack, offrant une solution robuste et évolutive pour votre entreprise."
-        sousTitre3="Libérez Votre Entrepreneuriat, Sans Complications! Je gère
-         l'aspect technique de votre startup avec un modèle de tarification flexible, permettant de se concentrer sur l'essentiel:
-         l'innovation et la croissance."
+        sousTitre1="Du Concept au Succès Digital ! Concrétisons votre
+         vision startup"
+        sousTitre2="Solution pour Fondateur CEO CTO PO ou manager,
+         robuste et évolutive."
+        sousTitre3="Modèle de tarification flexible, basé sur votre
+         aspect innovant"
+        sousTitre4="Libérez vous des tracas techniques objectif
+         croissance de l'entreprise."
       />
     </div>
   </div>
