@@ -16,7 +16,7 @@ Mieux encore,"
     <div class="flex-around lot-de-carte">
       <Carte
         class="box"
-        srcImg="../assets/1710299.svg"
+        srcImg="../assets/vue-nuxt-application.png"
         titre="Application
       Frontend"
         sousTitre1="Une
@@ -32,7 +32,7 @@ Mieux encore,"
       />
       <Carte
         class="box"
-        srcImg="../assets/2128601.svg"
+        srcImg="../assets/backend-node-api-rest.png"
         titre="Backend Api sur Mesure"
         sousTitre1="Protection de Données Inébranlable: J'assure la sécurité totale des données de vos clients, offrant une protection robuste
          contre les menaces potentielles pour votre tranquillité d'esprit."
@@ -45,7 +45,7 @@ Mieux encore,"
 
       <Carte
         class="box"
-        srcImg="../assets/1710299.svg"
+        srcImg="../assets/startup-application-node-vue-typescript.png"
         titre="Systéme Complet Start Up"
         sousTitre1="Du Concept au Succès Digital! Concrétisons votre vision de
          startup avec une expertise fullstack, vous libérant des

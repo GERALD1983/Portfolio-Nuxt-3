@@ -18,7 +18,7 @@
     <div class="flex-around lot-de-carte">
       <Carte
         class="box"
-        srcImg="../assets/dev-wordpress-prestashop.png"
+        srcImg="../assets/wordpress-prestashop-developpeur.png"
         titre="Création Site Wordpress Prestashop (Selon Dispo)"
         sousTitre1="Un site vitrine pour votre entreprise."
         sousTitre2="Besoin de visibilité pour une société,
@@ -27,7 +27,7 @@
       />
       <Carte
         class="box"
-        srcImg="../assets/developpeur-vue-nuxt-typescript.jpg"
+        srcImg="../assets/vue-nuxt-developpeur.jpg"
         titre="Projet Clés en Main de A à Z (Forfait sur Mesure)"
         sousTitre1="Vous avez des valeurs, des objectifs."
         sousTitre2="Vous êtes une Start Up en croissance,
@@ -37,7 +37,7 @@
       />
       <Carte
         class="box"
-        srcImg="../assets/developpeur-vue-node.jpg"
+        srcImg="../assets/node-vue-typescript-developpeur.png"
         titre="Mes Services en Régie (Cours ou Long terme)"
         sousTitre1="Vous cherchez des consultants !"
         sousTitre2="Vous êtes un grand groupe,
