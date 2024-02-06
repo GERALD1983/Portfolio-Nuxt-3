@@ -2,7 +2,7 @@
   <div id="content-slides" class="relative flex-column-center">
     <section id="slide1" class="sliders">
       <div class="slides-gauche flex-around">
-        <div>
+        <div class="content-image-competence">
           <img src="../assets/sql.png" alt="competence développeur sql logo" />
         </div>
         <div>
@@ -28,7 +28,7 @@
         </div>
         <div>
           <img
-            src="../assets/gimp.png"
+            src="../assets/chat-gpt-logo-competence.png"
             alt="competence développeur gimp logo"
           />
         </div>
@@ -58,11 +58,36 @@
 
     <section id="slide2" class="sliders">
       <div class="slides-droite flex-around">
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
+        <div>
+          <img
+            src="../assets/ssl-logo-competence.jpg"
+            alt="competence développeur ssl logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/sequelize-logo-competence.jpg"
+            alt="competence développeur sequelize logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/gitlab-logo-competence.png"
+            alt="competence développeur gitlab logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/Cpanel-logo-competence.png"
+            alt="competence développeur cpanel logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/express.png"
+            alt="competence développeur express js logo"
+          />
+        </div>
         <div>
           <img
             src="../assets/vscode.png"
@@ -94,16 +119,66 @@
     </section>
     <section id="slide3" class="sliders">
       <div class="slides-gauche flex-around">
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
-        <div><img src="../assets/sql.png" alt="" /></div>
+        <div>
+          <img
+            src="../assets/vue-logo-competence.png"
+            alt="competence développeur Vue Js logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/nuxt-logo-competence.png"
+            alt="competence développeur Nuxt Js logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/typescript-logo-competence.png"
+            alt="competence développeur typescript logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/intellij-logo-competence.png"
+            alt="competence développeur intellij logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/java-logo-competence.png"
+            alt="competence développeur java logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/langage-c-logo-competence.png"
+            alt="competence développeur langage c logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/prestashop-logo-competence.jpg"
+            alt="competence développeur prestashop logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/wordpress-logo-competence.png"
+            alt="competence développeur wordpress logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/zapier-logo-competence.png"
+            alt="competence développeur zapier logo"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/jest-test-logo-competence.png"
+            alt="competence développeur jest test unitaire logo"
+          />
+        </div>
       </div>
     </section>
 
@@ -113,6 +188,12 @@
 </template>
 <script setup></script>
 <style scoped>
+.content-image-competence {
+  background-color: #efefef6f;
+  border: 1px solid rgba(171, 170, 170, 0.194);
+  border-radius: 5px;
+  /* box-shadow: 10px 5px 5px black; */
+}
 #slide1,
 #slide2,
 #slide3 {
