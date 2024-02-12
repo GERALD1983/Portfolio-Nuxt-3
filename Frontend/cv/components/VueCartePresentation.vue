@@ -6,12 +6,11 @@
           debutTitre="Bénéficiez de"
           finTitre="+10 Années
       d'Expériences"
-          sousTitre1=" Vous vous demandez si cette expérience peut
-      vous apportez de la valeur !"
-          sousTitre2="Que ce qui fait la différence à un autre développeur ?"
+          sousTitre1=" Vous vous demandez en quoi cette expérience sera utile !"
+          sousTitre2="Que ce qui fait la différence ? Cela vous apportera t-il plus de valeur ?"
           sousTitre3="Une Expérience c'est avant tout une stack, une spécialité, avec mes
         objectifs sont clairs ! Focalisés votre business !"
-          sousTitre4="3 Types d'offres à disposition : "
+          sousTitre4="Je propose donc ces 3 Types d'offres à disposition : "
         />
       </ClientOnly>
     </div>
@@ -39,7 +38,7 @@
         class="box"
         srcImg="../assets/node-vue-typescript-developpeur.png"
         titre="Mes Services en Régie (Cours ou Long terme)"
-        sousTitre1="Vous cherchez des consultants !"
+        sousTitre1="Vous cherchez un consultant !"
         sousTitre2="Vous êtes un grand groupe,
         vous avez des besoins de migration, d'amélioration, d'innovations !"
         sousTitre3="Collaborons ensemble, je vous offre mes services à disposition."
