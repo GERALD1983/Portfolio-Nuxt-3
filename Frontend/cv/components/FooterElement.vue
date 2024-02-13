@@ -5,8 +5,8 @@
         <div class="categories flex-column-start">
           <h5 class="titre-categories">Contact</h5>
 
-          <a href=""
-            >Nuxters
+          <a href="https://www.linkedin.com/company/gf-tech-developpement"
+            >Presentation
             <span>
               <Icon
                 class="span-icon-arrow"
@@ -14,23 +14,46 @@
                 size="14px"
                 color="rgb(196, 196, 196)" /></span
           ></a>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
+          <a
+            href="https://www.societe.com/societe/monsieur-gerald-ferron-894490473.html"
+            >Societe</a
+          >
+          <a href="https://www.linkedin.com/in/gerald-ferron/">Profil</a>
+          <a href="https://cvdesignr.com/p/64ad757d62ce1"
+            >Curriculum vitae (Cv)</a
+          >
         </div>
         <div class="categories flex-column-start">
-          <h5 class="titre-categories">Contact</h5>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
+          <h5 class="titre-categories">Outils</h5>
+          <a href="https://nuxt.com/"
+            >Nuxt.js
+            <span>
+              <Icon
+                class="span-icon-arrow"
+                name="uil:arrow-up-right"
+                size="14px"
+                color="rgb(196, 196, 196)"
+            /></span>
+          </a>
+          <a href="https://vuejs.org/">Vue.js</a>
+          <a href="https://nodejs.org/en">Node.js</a>
+          <a href="https://stackoverflow.com/">Stack Overflow</a>
         </div>
         <div class="categories flex-column-start">
-          <h5 class="titre-categories">Contact</h5>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
-          <a href="">Nuxters</a>
+          <h5 class="titre-categories">Réseaux</h5>
+          <a href="https://gerald-ferron.com/"
+            >Site web
+            <span>
+              <Icon
+                class="span-icon-arrow"
+                name="uil:arrow-up-right"
+                size="14px"
+                color="rgb(196, 196, 196)"
+            /></span>
+          </a>
+          <a href="https://www.malt.fr/profile/geraldferron">Malt</a>
+          <a href="https://www.comet.co/">Comet</a>
+          <a href="https://www.cremedelacreme.io/">Créme de la créme</a>
         </div>
       </aside>
       <div>
@@ -38,7 +61,7 @@
           <h4 id="boxK" class="titre-categories">
             <b-icon icon="house-door-fill"></b-icon> Adresse :
           </h4>
-          <p id="boxJ">Ferron Gérald GF Tech 3 rue de la gare REDANGE 57390</p>
+          <p id="boxJ">Ferron Gérald GF Tech Rédange France</p>
 
           <p id="boxG">
             <b-icon class="mr-2" icon="telephone-plus"></b-icon>
@@ -51,7 +74,7 @@
       </div>
     </section>
     <section class="bas-footer flex-between">
-      <p>Copyright © 2012-2026 GF Tech - License</p>
+      <p>Copyright © 2012-2036 GF Tech - License</p>
       <div>
         <Icon
           class="icon-footer"

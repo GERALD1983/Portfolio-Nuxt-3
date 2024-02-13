@@ -58,40 +58,40 @@
           <ObjectifCarte
             srcIcone="material-symbols-light:stacks-outline-rounded"
             titre="Clean Architecture"
-            sousTitre1="demandez si cette expérience"
-            sousTitre2="une gestion efficace des données."
-            sousTitre3="concentrer sur la création."
-            sousTitre4="Créé pour l'efficacité."
+            sousTitre1="Maintenabilité plus sereine"
+            sousTitre2="Réduire le couplage composants"
+            sousTitre3="Méthode structuré et ordonnée"
+            sousTitre4="Principe SOLID MVC..."
           />
         </div>
         <div>
           <ObjectifCarte
             srcIcone="material-symbols-light:mobile-friendly-sharp"
             titre="Responsive design"
-            sousTitre1="demandez si cette expérience"
-            sousTitre2="une gestion efficace des données."
-            sousTitre3="concentrer sur la création."
-            sousTitre4="Créé pour l'efficacité."
+            sousTitre1="App réactive tout types de format"
+            sousTitre2="Transition automatique support"
+            sousTitre3="Adaptation agencer des élements"
+            sousTitre4="Optimisation et ergonomie"
           />
         </div>
         <div>
           <ObjectifCarte
             srcIcone="material-symbols-light:shield-lock-outline-rounded"
             titre="Données Sécurisés"
-            sousTitre1="demandez si cette expérience"
-            sousTitre2="une gestion efficace des données."
-            sousTitre3="concentrer sur la création."
-            sousTitre4="Créé pour l'efficacité."
+            sousTitre1="Chiffrement des données"
+            sousTitre2="Cryptographie et Hachage"
+            sousTitre3="Transmission critique sécurisé"
+            sousTitre4="Test et contrôle de sécurité "
           />
         </div>
         <div>
           <ObjectifCarte
             srcIcone="material-symbols-light:deployed-code-update-rounded"
             titre="Code Clean"
-            sousTitre1="demandez si cette expérience"
-            sousTitre2="une gestion efficace des données."
-            sousTitre3="concentrer sur la création."
-            sousTitre4="Créé pour l'efficacité."
+            sousTitre1="Principe KISS and DRY"
+            sousTitre2="Refactoring Pattern qualité"
+            sousTitre3="Test unitaire feature"
+            sousTitre4="Bonnes Pratiques lisibilité"
           />
         </div>
       </section>
