@@ -39,7 +39,7 @@ const propsCarte = defineProps<{
   display: flex;
   flex-direction: column;
   width: 238px;
-  height: 173px;
+  height: 193px;
   padding: 20px;
   border-radius: 1em;
   border: 1px solid #e2e5ec;
@@ -82,5 +82,6 @@ const propsCarte = defineProps<{
 }
 .sous-titre-carte-objectif > p {
   margin: 0;
+  margin-top: 3px;
 }
 </style>
