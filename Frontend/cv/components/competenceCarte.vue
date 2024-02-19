@@ -5,49 +5,49 @@
         <div class="content-image-competence">
           <img src="../assets/sql.png" alt="competence développeur sql logo" />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/postman.png"
             alt="competence développeur postman logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/bootstrap.png"
             alt="competence développeur bootstrap logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/cline.png"
             alt="competence développeur en ligne de commande logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img src="../assets/css.png" alt="competence développeur css logo" />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/chat-gpt-logo-competence.png"
             alt="competence développeur gimp logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img src="../assets/git.png" alt="competence développeur git logo" />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/github.png"
             alt="competence développeur github logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/html.png"
             alt="competence développeur html logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/js.png"
             alt="competence développeur javascript logo"
@@ -58,122 +58,122 @@
 
     <section id="slide2" class="sliders">
       <div class="slides-droite flex-around">
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/ssl-logo-competence.jpg"
             alt="competence développeur ssl logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/sequelize-logo-competence.jpg"
             alt="competence développeur sequelize logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/gitlab-logo-competence.png"
             alt="competence développeur gitlab logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/Cpanel-logo-competence.png"
             alt="competence développeur cpanel logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/express.png"
             alt="competence développeur express js logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/vscode.png"
             alt="competence développeur visual studio code logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/json.png"
             alt="competence développeur json logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/mongodb.png"
             alt="competence développeur mongodb logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/node.png"
             alt="competence développeur Node Js logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img src="../assets/npm.png" alt="competence développeur npm logo" />
         </div>
       </div>
     </section>
     <section id="slide3" class="sliders">
       <div class="slides-gauche flex-around">
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/vue-logo-competence.png"
             alt="competence développeur Vue Js logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/nuxt-logo-competence.png"
             alt="competence développeur Nuxt Js logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/typescript-logo-competence.png"
             alt="competence développeur typescript logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/intellij-logo-competence.png"
             alt="competence développeur intellij logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/java-logo-competence.png"
             alt="competence développeur java logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/langage-c-logo-competence.png"
             alt="competence développeur langage c logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/prestashop-logo-competence.jpg"
             alt="competence développeur prestashop logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/wordpress-logo-competence.png"
             alt="competence développeur wordpress logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/zapier-logo-competence.png"
             alt="competence développeur zapier logo"
           />
         </div>
-        <div>
+        <div class="content-image-competence">
           <img
             src="../assets/jest-test-logo-competence.png"
             alt="competence développeur jest test unitaire logo"
@@ -189,10 +189,22 @@
 <script setup></script>
 <style scoped>
 .content-image-competence {
-  background-color: #efefef6f;
-  border: 1px solid rgba(171, 170, 170, 0.194);
+  width: 86px;
+  height: 86px;
+  background-color: #ffffff;
+  border: 1px solid rgb(194, 194, 194);
   border-radius: 5px;
-  /* box-shadow: 10px 5px 5px black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-image-competence > img {
+  width: 75px;
+  height: 75px;
 }
 #slide1,
 #slide2,
