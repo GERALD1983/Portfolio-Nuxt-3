@@ -11,10 +11,15 @@
         </h3>
       </div>
 
-      <form class="flex-around" action="">
+      <form class="flex-around formulaire-contact" action="">
         <div class="flex-column-start">
           <label for="email">Email <span class="etoile-label">*</span></label>
-          <input type="email" placeholder="Entrez votre adresse mail..." />
+          <input
+            v-model="email"
+            v-bind="emailAttrs"
+            type="email"
+            placeholder="Entrez votre adresse mail..."
+          />
           <label for="text">Nom <span class="etoile-label">*</span></label>
           <input type="text" placeholder="Entrez votre nom..." />
           <label for="phone"
@@ -49,11 +54,21 @@
           </span>
           Get Contact
         </button>
+        <pre>{{ values }}</pre>
       </div>
     </section>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
+import { useForm } from "vee-validate";
+// Creates a form context
+// This component now acts as a form
+// Usually you will destruct the form context to get what you need
+
+const { values, defineField } = useForm();
+
+const [email, emailAttrs] = defineField("email");
+
 // onMounted(() => {
 //   const inputElement = document.querySelector(".input-message");
 
@@ -82,6 +97,7 @@
   margin-top: 100px;
   margin-bottom: 30px;
 }
+
 .titre-formulaire {
   font-weight: 700;
   font-size: 3em;
@@ -93,10 +109,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-form {
+.formulaire-contact {
+  background-color: rgb(177, 177, 177);
   width: 80%;
 }
-form > div {
+.formulaire-contact > div {
   width: 50%;
   height: 100%;
 }
@@ -118,7 +135,7 @@ input {
 }
 .input-message {
   height: 290px;
-  width: 100%;
+  width: 80%;
   position: relative;
 }
 input::placeholder {
