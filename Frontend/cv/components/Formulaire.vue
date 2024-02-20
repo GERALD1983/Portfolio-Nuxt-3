@@ -14,13 +14,13 @@
       <form class="flex-around" action="">
         <div class="flex-column-start">
           <label for="email">Email <span class="etoile-label">*</span></label>
-          <input type="email" placeholder="Enter your e-mail here..." />
+          <input type="email" placeholder="Entrez votre adresse mail..." />
           <label for="text">Nom <span class="etoile-label">*</span></label>
-          <input type="text" placeholder="Enter your name here..." />
+          <input type="text" placeholder="Entrez votre nom..." />
           <label for="phone"
             >Téléphone <span class="etoile-label">*</span></label
           >
-          <input type="phone" placeholder="Enter your phone here..." />
+          <input type="phone" placeholder="Entrez votre numéro..." />
         </div>
         <div class="flex-column-start">
           <label for="message"
@@ -29,7 +29,7 @@
           <input
             class="input-message"
             type="text-area"
-            placeholder="Please enter your message here..."
+            placeholder="Laissez votre message..."
             rows="5"
             wrap="soft"
             aria-required="true"
