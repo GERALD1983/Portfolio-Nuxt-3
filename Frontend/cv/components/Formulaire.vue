@@ -11,63 +11,95 @@
         </h3>
       </div>
 
-      <form class="flex-around formulaire-contact" action="">
-        <div class="flex-column-start">
-          <label for="email">Email <span class="etoile-label">*</span></label>
-          <input
-            v-model="email"
-            v-bind="emailAttrs"
-            type="email"
-            placeholder="Entrez votre adresse mail..."
-          />
-          <label for="text">Nom <span class="etoile-label">*</span></label>
-          <input type="text" placeholder="Entrez votre nom..." />
-          <label for="phone"
-            >Téléphone <span class="etoile-label">*</span></label
-          >
-          <input type="phone" placeholder="Entrez votre numéro..." />
-        </div>
-        <div class="flex-column-start">
-          <label for="message"
-            >Message <span class="etoile-label">*</span></label
-          >
-          <input
-            class="input-message"
-            type="text-area"
-            placeholder="Laissez votre message..."
-            rows="5"
-            wrap="soft"
-            aria-required="true"
-          />
-        </div>
-      </form>
-      <div class="content-all-button flex-around">
-        <button id="bouton-reset" type="reset">Reset</button>
-        <button id="bouton-submit" type="submit">
-          <span>
-            <Icon
-              class="icon-plane"
-              name="ion:ios-paper-plane"
-              size="20px"
-              color="white"
+      <form @submit="onSubmit" class="flex-column-center formulaire-contact">
+        <section class="flex-around section1-formulaire">
+          <div class="flex-column-start">
+            <label for="email">Email <span class="etoile-label">*</span></label>
+            <!-- v-bind="emailAttrs"  -->
+
+            <span class="erreur-message">{{ errors.email }}</span>
+            <input
+              v-model="email"
+              type="email"
+              placeholder="Entrez votre adresse mail..."
             />
-          </span>
-          Get Contact
-        </button>
-        <pre>{{ values }}</pre>
-      </div>
+
+            <label for="text">Nom <span class="etoile-label">*</span></label>
+            <input type="text" placeholder="Entrez votre nom..." />
+            <label for="phone"
+              >Téléphone <span class="etoile-label">*</span></label
+            >
+            <input type="phone" placeholder="Entrez votre numéro..." />
+          </div>
+          <div class="flex-column-start">
+            <label for="message"
+              >Message <span class="etoile-label">*</span></label
+            >
+            <input
+              class="input-message"
+              type="text-area"
+              placeholder="Laissez votre message..."
+              rows="5"
+              wrap="soft"
+              aria-required="true"
+            />
+          </div>
+        </section>
+        <section class="section2-formulaire flex-center">
+          <div class="content-all-button flex-around">
+            <button id="bouton-reset" type="reset">Reset</button>
+            <button id="bouton-submit" type="submit">
+              <span>
+                <Icon
+                  class="icon-plane"
+                  name="ion:ios-paper-plane"
+                  size="20px"
+                  color="white"
+                />
+              </span>
+              Get Contact
+            </button>
+          </div>
+          <pre>{{ values }}</pre>
+        </section>
+      </form>
     </section>
   </div>
 </template>
 <script setup lang="ts">
 import { useForm } from "vee-validate";
+
+import { toTypedSchema } from "@vee-validate/zod";
+import * as zod from "zod";
 // Creates a form context
 // This component now acts as a form
 // Usually you will destruct the form context to get what you need
 
-const { values, defineField } = useForm();
+const validationSchema = toTypedSchema(
+  zod.object({
+    email: zod
+      .string()
+      .regex(
+        new RegExp(
+          /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+        ),
+        { message: "Email Type : marc@hotmail.fr" },
+      )
+      .email({ message: "Votre meilleur adresse .fr .com..." }),
+  }),
+);
 
-const [email, emailAttrs] = defineField("email");
+const { values, errors, handleSubmit } = useForm({
+  validationSchema,
+});
+
+// const [email, emailAttrs] = defineField("email");
+
+const { value: email } = useField("email");
+
+const onSubmit = handleSubmit((values) => {
+  console.log(values.email);
+});
 
 // onMounted(() => {
 //   const inputElement = document.querySelector(".input-message");
@@ -113,14 +145,26 @@ const [email, emailAttrs] = defineField("email");
   background-color: rgb(177, 177, 177);
   width: 80%;
 }
-.formulaire-contact > div {
+.section1-formulaire {
+  width: 100%;
+  height: 100%;
+}
+.section1-formulaire > div {
   width: 50%;
+  height: 100%;
+}
+.section2-formulaire {
+  width: 75%;
   height: 100%;
 }
 label {
   margin-left: 5%;
   width: 90%;
   font-weight: 500;
+}
+.erreur-message {
+  margin-left: 5%;
+  height: 25px;
 }
 .etoile-label {
   color: red;
