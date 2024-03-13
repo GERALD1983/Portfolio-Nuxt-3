@@ -25,8 +25,12 @@
             />
 
             <label for="text">Nom <span class="etoile-label">*</span></label>
-            <span class="erreur-message">{{ errors.email }}</span>
-            <input type="text" placeholder="Entrez votre nom..." />
+            <span class="erreur-message">{{ errors.name }}</span>
+            <input
+              type="text"
+              v-model="name"
+              placeholder="Entrez votre nom..."
+            />
             <label for="phone"
               >Téléphone <span class="etoile-label">*</span></label
             >
@@ -90,6 +94,17 @@ const validationSchema = toTypedSchema(
         { message: "Email Type : marc@hotmail.fr" },
       )
       .email({ message: "Votre meilleur adresse .fr .com..." }),
+    name: zod
+      .string()
+      .min(1, " ")
+      .max(60, "Nom trop long 60 ltrs max")
+
+      .regex(
+        new RegExp(
+          /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._-\s]{2,61}$/,
+        ),
+        { message: "Nom doit contenir que des ltrs et min 2 ltrs." },
+      ),
   }),
 );
 
@@ -100,9 +115,11 @@ const { values, errors, handleSubmit } = useForm({
 // const [email, emailAttrs] = defineField("email");
 
 const { value: email } = useField("email");
+const { value: name } = useField("name");
 
 const onSubmit = handleSubmit((values) => {
   console.log(values.email);
+  console.log(values.name);
 });
 
 // onMounted(() => {
@@ -177,7 +194,7 @@ label {
 input {
   height: 40px;
   width: 90%;
-  margin-bottom: 5%;
+  margin-bottom: 25px;
   margin-left: 5%;
   margin-right: 5%;
   border-radius: 3px;
