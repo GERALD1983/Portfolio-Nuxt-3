@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div class="presentation-section">
     <h2 class="titre-presentation">
       {{ propsPresentation.debutTitre }}
       <span class="color-titre-presentation">
@@ -35,11 +35,14 @@ interface Presentation {
 const propsPresentation = defineProps<Presentation>();
 </script>
 <style scoped>
+.presentation-section {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .titre-presentation {
   font-weight: 700;
   font-size: 3em;
   margin-bottom: 30px;
-  margin-left: 50px;
 }
 .color-titre-presentation {
   background: linear-gradient(120deg, #00dc82 0%, #36e4da 100%);
@@ -49,7 +52,6 @@ const propsPresentation = defineProps<Presentation>();
 }
 
 .sous-titre-presentation {
-  margin-left: 50px;
   color: rgba(101, 108, 133, 0.8);
   font-size: 20px;
   margin-bottom: 50px;

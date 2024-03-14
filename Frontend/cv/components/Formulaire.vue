@@ -45,15 +45,25 @@
             <label for="message"
               >Message <span class="etoile-label">*</span></label
             >
-            <span class="erreur-message">{{ errors.email }}</span>
-            <input
+            <span class="erreur-message">{{ errors.message }}</span>
+            <!-- <input
               class="input-message"
+              v-model="message"
               type="text-area"
               placeholder="Laissez votre message..."
               rows="5"
               wrap="soft"
               aria-required="true"
-            />
+            /> -->
+
+            <textarea
+              v-model="message"
+              class="input-message"
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Votre message"
+            ></textarea>
           </div>
         </section>
         <section class="section2-formulaire flex-center">
@@ -119,10 +129,25 @@ const validationSchema = toTypedSchema(
           message: "Numéro invalide doit contenir des chfrs min 10 chfrs.",
         },
       ),
+    message: zod
+      .string()
+      .min(1, " ")
+      .max(300, "Message trop long 300 ltrs max")
+
+      .regex(
+        new RegExp(
+          /^[a-zA-Z0-9'áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._-\s]{10,300}$/,
+        ),
+        { message: "Message pas de chrs speciaux min 10 ltrs." },
+      )
+      .nullish(),
   }),
 );
 
 const { values, errors, handleSubmit } = useForm({
+  initialValues: {
+    message: "salut",
+  },
   validationSchema,
 });
 
@@ -131,6 +156,7 @@ const { values, errors, handleSubmit } = useForm({
 const { value: email } = useField("email");
 const { value: name } = useField("name");
 const { value: phone } = useField("phone");
+const { value: message } = useField("message");
 
 const onSubmit = handleSubmit((values) => {
   console.log(values);
@@ -218,7 +244,7 @@ input {
 .input-message {
   height: 275px;
   width: 80%;
-  position: relative;
+  /* position: relative; */
 }
 input::placeholder {
   color: rgb(196, 196, 196);
@@ -227,13 +253,13 @@ input:focus-visible {
   border: 1px solid transparent;
   outline: 1px solid rgb(47, 255, 127);
 }
-.input-message::placeholder {
+/* .input-message::placeholder {
   position: absolute;
   top: 12px;
 }
 .input-message:focus-visible {
   outline-offset: 0px;
-}
+} */
 .content-all-button {
   width: 80%;
 }
