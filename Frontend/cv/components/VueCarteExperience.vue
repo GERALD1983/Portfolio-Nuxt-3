@@ -13,9 +13,9 @@ Mieux encore,"
         />
       </ClientOnly>
     </div>
-    <div class="flex-around lot-de-carte">
+    <div class="flex-between lot-de-carte">
       <Carte
-        class="box"
+        class="box box1"
         srcImg="../assets/vue-nuxt-application.png"
         titre="Application
       Frontend"
@@ -25,20 +25,20 @@ Mieux encore,"
         sousTitre4="Code de qualité maintenant l'approche innovante."
       />
       <Carte
-        class="box"
+        class="box box2"
         srcImg="../assets/backend-node-api-rest.png"
         titre="Backend Api sur Mesure"
         sousTitre1="Protection de Données Inébranlable : Sécurité totale
          des données clients."
-        sousTitre2="Connectivité Transparente avec Votre BDD : Fluidité,
+        sousTitre2="Connectivité Transparente BDD : Fluidité,
          simplifiez vos opérations"
         sousTitre3="Développement Agile : Interconnexions fiables
-         sur vos applications et MVP"
+         sur vos apps"
         sousTitre4="Des technologies de pointe : Au service de votre data."
       />
 
       <Carte
-        class="box"
+        class="box box3"
         srcImg="../assets/startup-application-node-vue-typescript.png"
         titre="Systéme Complet Start Up"
         sousTitre1="Du Concept au Succès Digital ! Concrétisons votre
@@ -54,7 +54,13 @@ Mieux encore,"
   </div>
 </template>
 <script setup lang="ts"></script>
-<style>
+<style scoped>
+/* .box1 {
+  margin-left: 0 !important;
+}
+.box3 {
+  margin-right: 0 !important;
+} */
 /* .lot-de-carte {
   margin-left: 30px;
   margin-right: 30px;
