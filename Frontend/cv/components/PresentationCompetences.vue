@@ -10,8 +10,8 @@
     </div>
     <div class="flex-center">
       <h3 class="sous-titre-competences">
-        Mes compétences sont diverses et variés et elles seront une force de
-        proposition pour vos idées, vos objectifs et vos performances.
+        Mes compétences sont diverses et variés, une force de proposition pour
+        vos idées, objectifs et performances.
       </h3>
     </div>
     <section>
