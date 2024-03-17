@@ -25,16 +25,19 @@
             />
 
             <label for="text">Nom <span class="etoile-label">*</span></label>
+            <span class="erreur-message">{{ errors.email }}</span>
             <input type="text" placeholder="Entrez votre nom..." />
             <label for="phone"
               >Téléphone <span class="etoile-label">*</span></label
             >
+            <span class="erreur-message">{{ errors.email }}</span>
             <input type="phone" placeholder="Entrez votre numéro..." />
           </div>
           <div class="flex-column-start">
             <label for="message"
               >Message <span class="etoile-label">*</span></label
             >
+            <span class="erreur-message">{{ errors.email }}</span>
             <input
               class="input-message"
               type="text-area"
@@ -79,6 +82,7 @@ const validationSchema = toTypedSchema(
   zod.object({
     email: zod
       .string()
+      .min(1, " ")
       .regex(
         new RegExp(
           /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
@@ -157,6 +161,7 @@ const onSubmit = handleSubmit((values) => {
   width: 75%;
   height: 100%;
 }
+
 label {
   margin-left: 5%;
   width: 90%;
@@ -172,13 +177,15 @@ label {
 input {
   height: 40px;
   width: 90%;
-  margin: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   border-radius: 3px;
   border: 1px solid rgb(196, 196, 196);
   padding-left: 10px;
 }
 .input-message {
-  height: 290px;
+  height: 275px;
   width: 80%;
   position: relative;
 }
