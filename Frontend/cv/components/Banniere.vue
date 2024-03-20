@@ -103,7 +103,7 @@ const afficherMasquer = () => {
 #back-page {
   width: 100%;
   height: 620px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
 }

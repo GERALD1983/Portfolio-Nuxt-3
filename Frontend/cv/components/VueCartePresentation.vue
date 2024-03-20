@@ -57,6 +57,7 @@
   margin-right: 30px; */
   margin-left: 5%;
   margin-right: 5%;
+  flex-wrap: wrap;
 }
 /* html {
   height: 100%; */
