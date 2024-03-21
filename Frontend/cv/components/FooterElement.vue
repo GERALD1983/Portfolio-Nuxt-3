@@ -67,8 +67,7 @@
             <b-icon class="mr-2" icon="telephone-plus"></b-icon>
             Bureau : (+33) 09 70 44 46 21
             <br />
-            <b-icon class="mr-2" icon="mailbox"></b-icon> Mail:
-            ferron-gerald@outlook.fr
+            <!-- <b-icon class="mr-2" icon="mailbox"></b-icon> Mail: -->
           </p>
         </div>
       </div>
@@ -168,6 +167,28 @@
 .icon-footer {
   padding: 0 7px;
   color: rgb(196, 196, 196);
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+  .haut-footer {
+    flex-direction: column;
+    height: 100%;
+  }
+  .categories {
+    align-items: center;
+  }
+  .adress {
+    align-items: center;
+    width: 300px;
+    height: 100%;
+  }
+  #boxJ {
+    margin-top: 15px;
+  }
+  #boxG {
+    margin-bottom: 0;
+  }
 }
 </style>
 

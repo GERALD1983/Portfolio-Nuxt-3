@@ -56,4 +56,14 @@ const propsPresentation = defineProps<Presentation>();
   font-size: 20px;
   margin-bottom: 50px;
 }
+/* responsive */
+
+@media screen and (max-width: 1300px) {
+  .titre-presentation {
+    text-align: center;
+  }
+  .sous-titre-presentation {
+    text-align: center;
+  }
+}
 </style>

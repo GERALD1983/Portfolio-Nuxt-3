@@ -41,4 +41,18 @@
   font-size: 20px;
   margin-bottom: 50px;
 }
+/* responsive */
+
+@media screen and (max-width: 1300px) {
+  .titre-competences {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .sous-titre-competences {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 </style>
