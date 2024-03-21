@@ -34,8 +34,12 @@
             <label for="phone"
               >Téléphone <span class="etoile-label">*</span></label
             >
-            <span class="erreur-message">{{ errors.email }}</span>
-            <input type="phone" placeholder="Entrez votre numéro..." />
+            <span class="erreur-message">{{ errors.phone }}</span>
+            <input
+              type="phone"
+              v-model="phone"
+              placeholder="Entrez votre numéro..."
+            />
           </div>
           <div class="flex-column-start">
             <label for="message"
@@ -103,7 +107,17 @@ const validationSchema = toTypedSchema(
         new RegExp(
           /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._-\s]{2,61}$/,
         ),
-        { message: "Nom doit contenir que des ltrs et min 2 ltrs." },
+        { message: "Nom doit contenir que des ltrs min 2 ltrs." },
+      ),
+    phone: zod
+      .string()
+      .min(1, " ")
+      .max(20, "Telephone invalide Max 20 nbrs")
+      .regex(
+        new RegExp(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]{10,20}$/g),
+        {
+          message: "Numéro invalide doit contenir des chfrs min 10 chfrs.",
+        },
       ),
   }),
 );
@@ -116,10 +130,10 @@ const { values, errors, handleSubmit } = useForm({
 
 const { value: email } = useField("email");
 const { value: name } = useField("name");
+const { value: phone } = useField("phone");
 
 const onSubmit = handleSubmit((values) => {
-  console.log(values.email);
-  console.log(values.name);
+  console.log(values);
 });
 
 // onMounted(() => {
