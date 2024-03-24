@@ -78,8 +78,8 @@ const propsCarte = defineProps<{
   height: 550px;
   padding: 20px;
   margin: 50px;
-  /* border-radius: 1em; */
-  /* border: 1px solid #e2e5ec; */
+  /* border-radius: 1em;
+  border: 1px solid #e2e5ec; */
 }
 .fond-image {
   width: 100%;

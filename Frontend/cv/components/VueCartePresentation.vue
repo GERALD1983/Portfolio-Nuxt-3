@@ -16,7 +16,7 @@
     </div>
     <div class="flex-around lot-de-carte">
       <Carte
-        class="box"
+        class="box box1"
         srcImg="../assets/wordpress-prestashop-developpeur.png"
         titre="Création Site Wordpress Prestashop (Selon Dispo)"
         sousTitre1="Un site vitrine pour votre entreprise."
@@ -25,7 +25,7 @@
         sousTitre3="Etudions votre projet, concentrons nous sur les résultats."
       />
       <Carte
-        class="box"
+        class="box box2"
         srcImg="../assets/vue-nuxt-developpeur.jpg"
         titre="Projet Clés en Main de A à Z (Forfait sur Mesure)"
         sousTitre1="Vous avez des valeurs, des objectifs."
@@ -35,7 +35,7 @@
         une app scalable respectant votre budget."
       />
       <Carte
-        class="box"
+        class="box box3"
         srcImg="../assets/node-vue-typescript-developpeur.png"
         titre="Mes Services en Régie (Cours ou Long terme)"
         sousTitre1="Vous cherchez un consultant !"
@@ -48,9 +48,15 @@
 </template>
 <script setup lang="ts"></script>
 <style>
+/* .presentation-section-carte {
+  margin-left: 5%;
+  margin-right: 5%;
+} */
 .lot-de-carte {
   margin-left: 30px;
   margin-right: 30px;
+  /* margin-left: 5%;
+  margin-right: 5%; */
 }
 /* html {
   height: 100%; */
@@ -60,6 +66,9 @@
 }
 */
 
+/* .box1 {
+  margin-left: 5%;
+} */
 .box {
   /* position: relative; */
   border: 1px solid rgb(221, 221, 221);

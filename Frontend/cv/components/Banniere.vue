@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="banniere-section">
     <div id="back-page" class="back-slide">
       <img
         class="back-img"
         src="../assets/gradient-banniere-desktop.svg"
         alt="photo profil développeur web"
       />
-      <div>
+      <section>
         <button id="bouton-version">🔥 Dev Version Typescript</button>
         <h1 class="titre-principale">
           Développeur Vue Nuxt <br />
@@ -26,7 +26,7 @@
             ><span class="texte-call-passe"> move to the picture</span>
           </button>
         </div>
-      </div>
+      </section>
       <section class="parent-dial-img-profil">
         <div id="dial-photo" class="afficher-dialogue">
           <h2 class="dialogue-font">
@@ -96,6 +96,10 @@ const afficherMasquer = () => {
 </script>
 
 <style scoped>
+.banniere-section {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 #back-page {
   width: 100%;
   height: 620px;
