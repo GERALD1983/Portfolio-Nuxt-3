@@ -2,10 +2,8 @@
   <div>
     <div class="flex-center">
       <h2 class="titre-competences">
-        Des Solutions des atouts
-        <span class="color-titre-competences">
-          à apporté à vos propres projets ?</span
-        >
+        Des Solutions
+        <span class="color-titre-competences"> à apporté à vos projets ?</span>
       </h2>
     </div>
     <div class="flex-center">

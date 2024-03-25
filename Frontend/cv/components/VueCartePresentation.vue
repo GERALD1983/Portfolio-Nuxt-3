@@ -14,7 +14,7 @@
         />
       </ClientOnly>
     </div>
-    <div class="flex-around lot-de-carte">
+    <div class="flex-between lot-de-carte">
       <Carte
         class="box box1"
         srcImg="../assets/wordpress-prestashop-developpeur.png"
@@ -53,10 +53,10 @@
   margin-right: 5%;
 } */
 .lot-de-carte {
-  margin-left: 30px;
-  margin-right: 30px;
-  /* margin-left: 5%;
-  margin-right: 5%; */
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  margin-left: 5%;
+  margin-right: 5%;
 }
 /* html {
   height: 100%; */
@@ -66,9 +66,12 @@
 }
 */
 
-/* .box1 {
-  margin-left: 5%;
-} */
+.box1 {
+  margin-left: 0 !important;
+}
+.box3 {
+  margin-right: 0 !important;
+}
 .box {
   /* position: relative; */
   border: 1px solid rgb(221, 221, 221);

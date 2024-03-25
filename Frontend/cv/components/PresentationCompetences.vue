@@ -26,7 +26,7 @@
   font-size: 3em;
   margin-top: 200px;
   margin-bottom: 30px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .color-titre-competences {
   background: linear-gradient(120deg, #00dc82 0%, #36e4da 100%);
@@ -36,7 +36,7 @@
 }
 
 .sous-titre-competences {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   color: rgba(101, 108, 133, 0.8);
   font-size: 20px;
   margin-bottom: 50px;

@@ -74,10 +74,10 @@ const propsCarte = defineProps<{
 #carte {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
   height: 550px;
   padding: 20px;
-  margin: 50px;
+  margin: 25px;
   /* border-radius: 1em;
   border: 1px solid #e2e5ec; */
 }
