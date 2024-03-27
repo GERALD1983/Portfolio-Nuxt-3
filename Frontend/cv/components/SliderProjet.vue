@@ -17,17 +17,109 @@
       <div class="sliders">
         <div class="slides flex-around">
           <div class="slide">
-            <img src="../assets/opticien370.jpg" alt="" />
+            <img
+              src="../assets/site-amenagement-jardin.jpg"
+              alt="site amenagement jardin"
+            />
           </div>
           <div class="slide">
-            <img src="../assets/GROUPOMANIA370.jpg" alt="" />
+            <img
+              src="../assets/site-vente-trotinette-scooter.jpg"
+              alt="site vente trotinette scooter"
+            />
           </div>
           <div class="slide">
-            <img src="../assets/audio370.jpg" alt="" />
+            <img
+              src="../assets/audio370.jpg"
+              alt="site audioprothésiste et audioprothése"
+            />
           </div>
-          <div class="slide"><img src="../assets/RESTO370.jpg" alt="" /></div>
           <div class="slide">
-            <img src="../assets/CHOUETTE370.jpg" alt="" />
+            <img
+              src="../assets/site-amenagement-objet-design.jpg"
+              alt="site amenagement objet design"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-blockchain-cryptomonnaie.jpg"
+              alt="site informations blockchain cryptomonnaie"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/opticien370.jpg"
+              alt="site e-commerce opticien"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-saas-app.jpg"
+              alt="site saas application web"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-gaming-developpement-jeux.jpg"
+              alt="site de gaming site de développement de jeux"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-vente-chaussure.jpg"
+              alt="site ecommerce chaussure"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/CHOUETTE370.jpg"
+              alt="agence web site web sur mesure"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-location-limousine-luxe.jpg"
+              alt="site web de location de voiture de luxe limousine"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/GROUPOMANIA370.jpg"
+              alt="site reseau social pour entreprise"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-nettoyage-vehicule.jpg"
+              alt="site web netoyyage véhicule"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-statistique-business-suivi.jpg"
+              alt="site crm de statistique et de suivi business entreprise"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-transport-logistique.jpg"
+              alt="site web de transport et logistique"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-vente-immobillier.jpg"
+              alt="site application de vente et location immobilier"
+            />
+          </div>
+          <div class="slide">
+            <img src="../assets/RESTO370.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/site-vente-location-vehicule.jpg"
+              alt="site vente et location de voiture"
+            />
           </div>
         </div>
       </div>
@@ -86,7 +178,10 @@
 .sliders {
   /* width: calc(2 * 370px * 5); */
   /* width: 100%; */
-  width: calc(30% * 5);
+
+  /* width: calc(30% * 5); */
+
+  width: calc(30% * 15);
 
   overflow: hidden;
 }
@@ -95,8 +190,12 @@
   --slider-inner-width: 1500px;
   /* width: calc(2 * 370px * 5); */
   /* width: calc(30% * 5); */
-  width: calc(30% * 5);
-  animation: defile 20s infinite linear;
+
+  /* width: calc(30% * 5); */
+
+  width: calc(30% * 20);
+
+  animation: defile 50s infinite linear;
   animation-play-state: running;
 }
 .slides:hover {
@@ -107,9 +206,13 @@
   margin-left: 20px;
   float: left;
 }
+.slide > img {
+  /* border: 1px solid rgb(168, 168, 168); */
+  border-radius: 2px;
+}
 @keyframes defile {
   0% {
-    transform: translate(62%);
+    transform: translate(25%);
   }
   100% {
     transform: translateX(-100%);
