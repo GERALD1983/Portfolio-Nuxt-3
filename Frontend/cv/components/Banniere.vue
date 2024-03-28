@@ -6,8 +6,11 @@
         src="../assets/gradient-banniere-desktop.svg"
         alt="photo profil développeur web"
       />
-      <section>
-        <button id="bouton-version">🔥 Dev Version Typescript</button>
+      <section class="section-texte-profil">
+        <div class="container-bouton-version">
+          <button id="bouton-version">🔥 Dev Version Typescript</button>
+        </div>
+
         <h1 class="titre-principale">
           Développeur Vue Nuxt <br />
           Node.js
@@ -18,7 +21,7 @@
           <br />
           Avec des Frameworks puissants et Modernes
         </h2>
-        <div>
+        <div class="container-boutons-bottom">
           <button class="bouton-savoir">En savoir plus</button>
           <button id="bouton-version-bottom">
             <span class="fleche-bouton">► </span
@@ -42,6 +45,7 @@
             </div>
           </h2>
         </div>
+        <Eclair class="eclair-position" />
         <div id="remplace-dialogue"></div>
         <img
           @mouseenter="afficherMasquer()"
@@ -58,6 +62,8 @@
 </template>
 
 <script setup lang="ts">
+import Eclair from "./icons/Eclair.vue";
+
 const afficherMasquer = () => {
   let remplaceDialPhoto = document.getElementById(
     "remplace-dialogue",
@@ -302,6 +308,48 @@ const afficherMasquer = () => {
   }
   50% {
     border-right: 3px solid white;
+  }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+  #back-page {
+    flex-direction: column;
+    height: 100%;
+  }
+  .container-bouton-version {
+    display: flex;
+    justify-content: center;
+  }
+  .titre-principale {
+    text-align: center;
+  }
+  .titre-second {
+    text-align: center;
+  }
+  .container-boutons-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+  }
+
+  .eclair-position {
+    position: absolute;
+    width: 900px;
+    z-index: -1;
+  }
+  .img-profil {
+    margin-bottom: 200px;
+  }
+  #remplace-dialogue {
+    width: 350px;
+  }
+  .afficher-dialogue {
+    width: 350px;
+  }
+  .section-texte-profil {
+    margin-top: 50px;
   }
 }
 </style>

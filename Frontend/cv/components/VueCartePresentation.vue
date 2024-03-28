@@ -136,4 +136,11 @@
   inherits: true;
   initial-value: 0turn;
 }
+/* RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+  .lot-de-carte {
+    justify-content: center;
+  }
+}
 </style>
